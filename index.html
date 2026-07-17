@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Peter Elia Nasseem Fanous, full stack developer specializing in POS, gym management, and coaching platforms.">
+  <meta name="author" content="Peter Elia Nasseem Fanous">
+  <meta name="copyright" content="Copyright 2026 Peter Elia Nasseem Fanous. All rights reserved.">
+  <title>Peter Elia | Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+</head>
+<body>
+  <canvas id="matrix-canvas"></canvas>
+  <canvas id="particles-canvas"></canvas>
+
+  <div class="sidebar-overlay" id="sidebar-overlay" aria-hidden="true"></div>
+
+  <header class="mobile-topbar" id="mobile-topbar" aria-label="Mobile navigation">
+    <button type="button" class="sidebar-toggle" id="sidebar-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="sidebar">
+      <iconify-icon class="toggle-icon-open" icon="solar:hamburger-menu-bold"></iconify-icon>
+      <iconify-icon class="toggle-icon-close" icon="solar:close-circle-bold"></iconify-icon>
+    </button>
+    <a class="mobile-topbar-brand" href="#hero" aria-label="Home">
+      <span class="logo-icon interactive-icon">
+        <iconify-icon icon="solar:code-square-bold"></iconify-icon>
+      </span>
+      <span class="logo-text">Peter Elia</span>
+    </a>
+    <div class="mobile-topbar-status" aria-label="Status online">
+      <span class="status-dot"></span>
+      <span class="status-text">online</span>
+    </div>
+  </header>
+
+  <aside class="sidebar" id="sidebar" aria-label="Main navigation">
+    <div class="sidebar-header">
+      <a class="sidebar-logo" href="#hero" aria-label="Home">
+        <span class="logo-icon interactive-icon">
+          <iconify-icon icon="solar:code-square-bold"></iconify-icon>
+        </span>
+        <span class="logo-text">Peter Elia</span>
+      </a>
+    </div>
+
+    <nav class="sidebar-nav" aria-label="Sections">
+      <ul class="sidebar-links">
+        <li><a href="#hero" class="sidebar-link active" data-tooltip="Home"><iconify-icon icon="solar:home-2-bold"></iconify-icon><span>home</span></a></li>
+        <li><a href="#about" class="sidebar-link" data-tooltip="About"><iconify-icon icon="solar:user-rounded-bold"></iconify-icon><span>about</span></a></li>
+        <li><a href="#skills" class="sidebar-link" data-tooltip="Skills"><iconify-icon icon="solar:cpu-bold"></iconify-icon><span>skills</span></a></li>
+        <li><a href="#projects" class="sidebar-link" data-tooltip="Projects"><iconify-icon icon="solar:case-round-bold"></iconify-icon><span>projects</span></a></li>
+        <li><a href="#contact" class="sidebar-link" data-tooltip="Contact"><iconify-icon icon="solar:chat-round-dots-bold"></iconify-icon><span>contact</span></a></li>
+      </ul>
+    </nav>
+
+    <div class="sidebar-footer">
+      <div class="sidebar-status">
+        <iconify-icon class="status-icon interactive-icon" icon="solar:bolt-circle-bold"></iconify-icon>
+        <span class="status-dot"></span>
+        <span class="status-text">online</span>
+      </div>
+      <div class="sidebar-social">
+        <a href="https://github.com/beterelea020-alt" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub"><iconify-icon icon="mdi:github"></iconify-icon></a>
+        <a href="https://www.linkedin.com/in/peter-elea-71689935a/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn"><iconify-icon icon="mdi:linkedin"></iconify-icon></a>
+        <a href="mailto:beterelea020@gmail.com" class="social-link" aria-label="Email"><iconify-icon icon="solar:letter-bold"></iconify-icon></a>
+      </div>
+    </div>
+  </aside>
+
+  <main class="main-content" id="main-content">
+  <section id="hero" class="section hero-section">
+    <div class="hero-content">
+      <div class="terminal-window">
+        <div class="terminal-header">
+          <div class="terminal-dots">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <span class="terminal-title">
+            <iconify-icon icon="solar:terminal-bold"></iconify-icon>
+            ~/portfolio - bash
+          </span>
+        </div>
+        <div class="terminal-body">
+          <div class="hero-chip">
+            <iconify-icon class="interactive-icon" icon="solar:stars-bold-duotone"></iconify-icon>
+            <span>Premium UI Portfolio</span>
+          </div>
+          <div class="code-line"><span class="prompt">$</span><span class="command">whoami</span></div>
+          <div class="code-line output"><span id="typing-name" class="typing-text"></span><span class="cursor">|</span></div>
+          <div class="code-line"><span class="prompt">$</span><span class="command">cat role.txt</span></div>
+          <div class="code-line output"><span id="typing-role" class="typing-text"></span></div>
+          <div class="code-line"><span class="prompt">$</span><span class="command">echo $PASSION</span></div>
+          <div class="code-line output"><span id="typing-passion" class="typing-text"></span></div>
+        </div>
+      </div>
+      <div class="hero-visual-stack">
+        <div class="hero-visual-card" id="hero-visual">
+          <div class="code-rain" aria-hidden="true">
+            <span>const portfolio = "PeterElia.dev";</span>
+            <span>build.cleanUI();</span>
+            <span>deploy({ responsive: true });</span>
+            <span>skills.map(render);</span>
+            <span>return premiumExperience;</span>
+            <span>async function createImpact()</span>
+          </div>
+          <div class="hero-image-shell">
+            <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=900&q=80" alt="Developer workspace with code on screen">
+          </div>
+          <div class="hero-visual-badge">
+            <iconify-icon icon="solar:programming-bold-duotone"></iconify-icon>
+            <span>Code-Driven UI</span>
+          </div>
+        </div>
+        <div class="scroll-indicator">
+          <span class="scroll-text">scroll down</span>
+          <iconify-icon class="scroll-icon interactive-icon" icon="solar:round-arrow-down-bold"></iconify-icon>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section about-section">
+    <div class="section-header">
+      <span class="comment"><iconify-icon icon="solar:user-id-bold"></iconify-icon> about me</span>
+      <h2 class="glitch" data-text="About()">About()</h2>
+    </div>
+    <div class="about-container">
+      <div class="code-editor">
+        <div class="editor-header">
+          <div class="editor-tabs">
+            <span class="tab active"><iconify-icon icon="solar:file-text-bold"></iconify-icon> about.js</span>
+            <span class="tab"><iconify-icon icon="solar:settings-bold"></iconify-icon> config.json</span>
+          </div>
+        </div>
+        <div class="editor-body">
+          <div class="line-numbers" id="about-lines"></div>
+          <div class="code-content"><pre><code><span class="keyword">const</span> <span class="variable">developer</span> = {
+  <span class="property">name</span>: <span class="string">"Peter Elia Nasseem Fanous"</span>,
+  <span class="property">brand</span>: <span class="string">"PeterElia.dev"</span>,
+  <span class="property">title</span>: <span class="string">"Full Stack Developer"</span>,
+  <span class="property">experience</span>: <span class="string">"3+ years"</span>,
+  <span class="property">location</span>: <span class="string">"Egypt / Remote"</span>,
+  <span class="property">passion</span>: <span class="string">"Building real-world business systems"</span>,
+
+  <span class="function">describe</span>() {
+    <span class="keyword">return</span> <span class="string">"I build point-of-sale, gym, and coaching platforms that run real businesses."</span>;
+  }
+};</code></pre></div>
+        </div>
+      </div>
+      <div class="about-stats">
+        <div class="stat-card"><div class="stat-icon interactive-icon"><iconify-icon icon="solar:cup-star-bold"></iconify-icon></div><div class="stat-number" data-target="20">0</div><div class="stat-label">projects completed</div></div>
+        <div class="stat-card"><div class="stat-icon interactive-icon"><iconify-icon icon="solar:rocket-bold-duotone"></iconify-icon></div><div class="stat-number" data-target="3">0</div><div class="stat-label">years experience</div></div>
+        <div class="stat-card"><div class="stat-icon interactive-icon"><iconify-icon icon="solar:code-2-bold"></iconify-icon></div><div class="stat-number" data-target="800">0</div><div class="stat-label">commits this year</div></div>
+        <div class="stat-card"><div class="stat-icon interactive-icon"><iconify-icon icon="solar:cup-hot-bold"></iconify-icon></div><div class="stat-number" data-target="99">0</div><div class="stat-label">cups of coffee</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section skills-section">
+    <div class="section-header">
+      <span class="comment"><iconify-icon icon="solar:cpu-bold"></iconify-icon> my skills</span>
+      <h2 class="glitch" data-text="Skills[]">Skills[]</h2>
+    </div>
+    <div class="skills-container">
+      <div class="skill-category">
+        <div class="category-header"><span class="folder-icon interactive-icon"><iconify-icon icon="solar:monitor-smartphone-bold"></iconify-icon></span><span class="category-name">frontend/</span></div>
+        <div class="skill-items">
+          <div class="skill-item" data-level="90"><span class="skill-name">React.js</span><div class="skill-bar"><div class="skill-fill" style="--level: 90%"></div></div><span class="skill-percent">90%</span></div>
+          <div class="skill-item" data-level="88"><span class="skill-name">JavaScript</span><div class="skill-bar"><div class="skill-fill" style="--level: 88%"></div></div><span class="skill-percent">88%</span></div>
+          <div class="skill-item" data-level="85"><span class="skill-name">HTML/CSS</span><div class="skill-bar"><div class="skill-fill" style="--level: 85%"></div></div><span class="skill-percent">85%</span></div>
+        </div>
+      </div>
+      <div class="skill-category">
+        <div class="category-header"><span class="folder-icon interactive-icon"><iconify-icon icon="solar:server-square-bold"></iconify-icon></span><span class="category-name">backend/</span></div>
+        <div class="skill-items">
+          <div class="skill-item" data-level="92"><span class="skill-name">Node.js</span><div class="skill-bar"><div class="skill-fill" style="--level: 92%"></div></div><span class="skill-percent">92%</span></div>
+          <div class="skill-item" data-level="85"><span class="skill-name">Express</span><div class="skill-bar"><div class="skill-fill" style="--level: 85%"></div></div><span class="skill-percent">85%</span></div>
+          <div class="skill-item" data-level="88"><span class="skill-name">MongoDB</span><div class="skill-bar"><div class="skill-fill" style="--level: 88%"></div></div><span class="skill-percent">88%</span></div>
+        </div>
+      </div>
+      <div class="skill-category">
+        <div class="category-header"><span class="folder-icon interactive-icon"><iconify-icon icon="solar:cloud-bold-duotone"></iconify-icon></span><span class="category-name">systems/</span></div>
+        <div class="skill-items">
+          <div class="skill-item" data-level="90"><span class="skill-name">POS Systems</span><div class="skill-bar"><div class="skill-fill" style="--level: 90%"></div></div><span class="skill-percent">90%</span></div>
+          <div class="skill-item" data-level="80"><span class="skill-name">Authentication</span><div class="skill-bar"><div class="skill-fill" style="--level: 80%"></div></div><span class="skill-percent">80%</span></div>
+          <div class="skill-item" data-level="82"><span class="skill-name">Git</span><div class="skill-bar"><div class="skill-fill" style="--level: 82%"></div></div><span class="skill-percent">82%</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section projects-section">
+    <div class="section-header">
+      <span class="comment"><iconify-icon icon="solar:case-round-bold"></iconify-icon> my projects</span>
+      <h2 class="glitch" data-text="Projects{}">Projects{}</h2>
+    </div>
+    <div class="projects-grid">
+      <article class="project-card">
+        <div class="project-header"><div class="project-dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div><span class="project-file"><iconify-icon icon="logos:javascript"></iconify-icon> ps-shop-pro.js</span></div>
+        <div class="project-body"><pre><code><span class="keyword">export</span> <span class="keyword">const</span> <span class="variable">PSShopPro</span> = () =&gt; {
+  <span class="comment">// PlayStation rental & sales management</span>
+  <span class="keyword">const</span> features = [<span class="string">"Sessions"</span>, <span class="string">"Licensing"</span>, <span class="string">"Sales"</span>];
+};</code></pre></div>
+        <div class="project-footer"><div class="project-tags"><span class="tag-item">JavaScript</span><span class="tag-item">Node.js</span><span class="tag-item">Windows</span></div><div class="project-links"><a href="#" class="project-link"><iconify-icon icon="solar:play-circle-bold"></iconify-icon> Live</a><a href="https://github.com/beterelea020-alt" target="_blank" rel="noopener noreferrer" class="project-link"><iconify-icon icon="solar:code-square-bold"></iconify-icon> Code</a></div></div>
+      </article>
+      <article class="project-card">
+        <div class="project-header"><div class="project-dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div><span class="project-file"><iconify-icon icon="logos:react"></iconify-icon> supplements-pos.jsx</span></div>
+        <div class="project-body"><pre><code><span class="keyword">export</span> <span class="keyword">const</span> <span class="variable">SupplementsPOS</span> = () =&gt; {
+  <span class="comment">// Point-of-sale for selling products</span>
+  <span class="keyword">const</span> modules = [<span class="string">"Inventory"</span>, <span class="string">"Invoices"</span>, <span class="string">"Reports"</span>];
+};</code></pre></div>
+        <div class="project-footer"><div class="project-tags"><span class="tag-item">React</span><span class="tag-item">Node.js</span><span class="tag-item">MongoDB</span></div><div class="project-links"><a href="#" class="project-link"><iconify-icon icon="solar:play-circle-bold"></iconify-icon> Live</a><a href="https://github.com/beterelea020-alt" target="_blank" rel="noopener noreferrer" class="project-link"><iconify-icon icon="solar:code-square-bold"></iconify-icon> Code</a></div></div>
+      </article>
+      <article class="project-card">
+        <div class="project-header"><div class="project-dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div><span class="project-file"><iconify-icon icon="logos:nodejs-icon"></iconify-icon> gym-system.js</span></div>
+        <div class="project-body"><pre><code><span class="keyword">class</span> <span class="variable">GymSystem</span> {
+  <span class="comment">// Members, subscriptions & attendance</span>
+  modules = [<span class="string">"Members"</span>, <span class="string">"Subscriptions"</span>, <span class="string">"Check-in"</span>];
+}</code></pre></div>
+        <div class="project-footer"><div class="project-tags"><span class="tag-item">Node.js</span><span class="tag-item">Express</span><span class="tag-item">MongoDB</span></div><div class="project-links"><a href="#" class="project-link"><iconify-icon icon="solar:play-circle-bold"></iconify-icon> Live</a><a href="https://github.com/beterelea020-alt" target="_blank" rel="noopener noreferrer" class="project-link"><iconify-icon icon="solar:code-square-bold"></iconify-icon> Code</a></div></div>
+      </article>
+      <article class="project-card">
+        <div class="project-header"><div class="project-dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div><span class="project-file"><iconify-icon icon="logos:react"></iconify-icon> coachpro.jsx</span></div>
+        <div class="project-body"><pre><code><span class="keyword">export</span> <span class="keyword">const</span> <span class="variable">CoachPro</span> = () =&gt; {
+  <span class="comment">// Coaching platform: admin, coach & client views</span>
+  <span class="keyword">const</span> roles = [<span class="string">"Admin"</span>, <span class="string">"Coach"</span>, <span class="string">"Client"</span>];
+};</code></pre></div>
+        <div class="project-footer"><div class="project-tags"><span class="tag-item">React</span><span class="tag-item">Node.js</span><span class="tag-item">Auth</span></div><div class="project-links"><a href="#" class="project-link"><iconify-icon icon="solar:play-circle-bold"></iconify-icon> Live</a><a href="https://github.com/beterelea020-alt" target="_blank" rel="noopener noreferrer" class="project-link"><iconify-icon icon="solar:code-square-bold"></iconify-icon> Code</a></div></div>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact-section">
+    <div class="section-header">
+      <span class="comment"><iconify-icon icon="solar:letter-bold"></iconify-icon> get in touch</span>
+      <h2 class="glitch" data-text="Contact()">Contact()</h2>
+    </div>
+    <div class="contact-container">
+      <div class="contact-terminal">
+        <div class="terminal-header"><div class="terminal-dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div><span class="terminal-title"><iconify-icon icon="solar:chat-round-call-bold"></iconify-icon> ~/contact - send_message</span></div>
+        <div class="terminal-body contact-form-body">
+          <form id="contact-form" class="cli-form">
+            <div class="form-line"><span class="prompt"><iconify-icon icon="solar:user-rounded-bold"></iconify-icon></span><input type="text" id="name" class="cli-input" placeholder="Enter your name..." required></div>
+            <div class="form-line"><span class="prompt"><iconify-icon icon="solar:letter-bold"></iconify-icon></span><input type="email" id="email" class="cli-input" placeholder="Enter your email..." required></div>
+            <div class="form-line"><span class="prompt"><iconify-icon icon="solar:document-text-bold"></iconify-icon></span><input type="text" id="subject" class="cli-input" placeholder="Enter subject..." required></div>
+            <div class="form-line"><span class="prompt"><iconify-icon icon="solar:pen-new-square-bold"></iconify-icon></span><textarea id="message" class="cli-input cli-textarea" placeholder="Type your message..." required></textarea></div>
+            <div class="form-line"><button type="submit" class="submit-btn"><iconify-icon icon="solar:plain-2-bold"></iconify-icon> send_message --ui-only</button></div>
+            <div id="form-response" class="form-response"></div>
+          </form>
+        </div>
+      </div>
+      <div class="contact-info">
+        <a class="linkedin-card" href="https://www.linkedin.com/in/peter-elea-71689935a/" target="_blank" rel="noopener noreferrer" aria-label="Peter Elia LinkedIn profile">
+          <span class="linkedin-card-icon interactive-icon"><iconify-icon icon="mdi:linkedin"></iconify-icon></span>
+          <span class="linkedin-card-content">
+            <span class="linkedin-card-label">LinkedIn Profile</span>
+            <strong>Peter Elia Nasseem Fanous</strong>
+            <small>PeterElia.dev</small>
+          </span>
+          <iconify-icon class="linkedin-card-arrow" icon="solar:arrow-right-up-bold"></iconify-icon>
+        </a>
+        <div class="info-block"><pre><code><span class="keyword">const</span> <span class="variable">links</span> = {
+  <span class="property">name</span>: <span class="string">"Peter Elia Nasseem Fanous"</span>,
+  <span class="property">brand</span>: <span class="string">"PeterElia.dev"</span>,
+  <span class="property">github</span>: <span class="string">"github.com/beterelea020-alt"</span>,
+  <span class="property">linkedin</span>: <span class="string">"linkedin.com/in/peter-elea-71689935a"</span>,
+  <span class="property">email</span>: <span class="string">"beterelea020@gmail.com"</span>
+};</code></pre></div>
+        <div class="social-links">
+          <a href="https://github.com/beterelea020-alt" target="_blank" rel="noopener noreferrer" class="social-link" data-tooltip="GitHub" aria-label="GitHub"><iconify-icon icon="mdi:github"></iconify-icon></a>
+          <a href="https://www.linkedin.com/in/peter-elea-71689935a/" target="_blank" rel="noopener noreferrer" class="social-link" data-tooltip="LinkedIn" aria-label="LinkedIn"><iconify-icon icon="mdi:linkedin"></iconify-icon></a>
+          <a href="mailto:beterelea020@gmail.com" class="social-link" data-tooltip="Email" aria-label="Email"><iconify-icon icon="solar:letter-bold"></iconify-icon></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <span class="footer-code"><iconify-icon icon="solar:shield-check-bold"></iconify-icon> All rights reserved</span>
+      <span class="footer-year">&copy; 2026 | <span class="neon-text">Peter Elia Nasseem Fanous</span></span>
+    </div>
+  </footer>
+  </main>
+
+  <div class="custom-cursor"></div>
+  <div class="cursor-follower"></div>
+  <script src="script.js"></script>
+
+</body>
+</html>
