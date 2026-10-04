@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 680" role="img" aria-label="RTL STORE project preview">
+      <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#122037"/><stop offset="1" stop-color="#0a0e13"/></linearGradient></defs>
+      <rect width="1000" height="680" fill="url(#g)"/>
+      <rect x="44" y="36" width="912" height="608" rx="26" fill="#0a0f14" stroke="#25303c" stroke-width="2"/>
+      <rect x="44" y="36" width="912" height="48" rx="26" fill="#121922"/><rect x="44" y="61" width="912" height="23" fill="#121922"/>
+      <circle cx="71" cy="60" r="7" fill="#ef6b6b"/><circle cx="93" cy="60" r="7" fill="#e3b94b"/><circle cx="115" cy="60" r="7" fill="#5dc47c"/>
+      <rect x="160" y="48" width="610" height="24" rx="12" fill="#0c1218"/><text x="182" y="65" fill="#6f7f90" font-size="12" font-family="Arial">app-preview / rtl-store</text>
+      <rect x="76" y="116" width="848" height="500" rx="18" fill="#122037"/>
+        <text x="112" y="162" fill="#d6a36a" font-size="15" font-weight="700" font-family="Arial">RAW COFFEE HOUSE</text>
+        <text x="112" y="197" fill="#eef3f8" font-size="29" font-weight="700" font-family="Arial">Choose your coffee.</text>
+        <rect x="112" y="222" width="472" height="42" rx="12" fill="#141b24"/><rect x="129" y="239" width="120" height="8" rx="4" fill="#4c5b70"/>
+        <rect x="112" y="286" width="220" height="145" rx="16" fill="#1a222d"/><rect x="350" y="286" width="220" height="145" rx="16" fill="#1a222d"/>
+        <circle cx="222" cy="344" r="38" fill="#5a3924"/><circle cx="460" cy="344" r="38" fill="#8c5c38"/>
+        <rect x="134" y="397" width="110" height="8" rx="4" fill="#d6a36a"/><rect x="372" y="397" width="90" height="8" rx="4" fill="#d6a36a"/>
+        <rect x="610" y="222" width="274" height="274" rx="18" fill="#141b24"/><text x="635" y="254" fill="#8090a2" font-size="12" font-family="Arial">YOUR CART</text>
+        <rect x="635" y="279" width="220" height="48" rx="12" fill="#1a222d"/><rect x="650" y="294" width="90" height="7" rx="3.5" fill="#708095"/><rect x="650" y="310" width="65" height="6" rx="3" fill="#455264"/>
+        <rect x="635" y="339" width="220" height="48" rx="12" fill="#1a222d"/><rect x="650" y="354" width="100" height="7" rx="3.5" fill="#708095"/>
+        <rect x="635" y="415" width="220" height="52" rx="14" fill="#d6a36a"/><text x="745" y="447" text-anchor="middle" fill="#162018" font-size="14" font-weight="700" font-family="Arial">CHECKOUT → WHATSAPP</text>
+        <rect x="112" y="462" width="458" height="60" rx="14" fill="#172432"/><text x="135" y="499" fill="#8090a2" font-size="13" font-family="Arial">Free shipping progress</text><rect x="315" y="488" width="225" height="8" rx="4" fill="#334558"/><rect x="315" y="488" width="162" height="8" rx="4" fill="#d6a36a"/>
+      <rect x="801" y="48" width="110" height="24" rx="12" fill="#d6a36a" opacity=".12"/><text x="856" y="65" text-anchor="middle" fill="#d6a36a" font-size="11" font-weight="700" font-family="Arial">RTL STORE</text>
+    </svg>

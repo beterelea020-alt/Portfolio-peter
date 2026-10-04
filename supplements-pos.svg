@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 680" role="img" aria-label="RETAIL POS project preview">
+      <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1c1630"/><stop offset="1" stop-color="#0a0e13"/></linearGradient></defs>
+      <rect width="1000" height="680" fill="url(#g)"/>
+      <rect x="44" y="36" width="912" height="608" rx="26" fill="#0a0f14" stroke="#25303c" stroke-width="2"/>
+      <rect x="44" y="36" width="912" height="48" rx="26" fill="#121922"/><rect x="44" y="61" width="912" height="23" fill="#121922"/>
+      <circle cx="71" cy="60" r="7" fill="#ef6b6b"/><circle cx="93" cy="60" r="7" fill="#e3b94b"/><circle cx="115" cy="60" r="7" fill="#5dc47c"/>
+      <rect x="160" y="48" width="610" height="24" rx="12" fill="#0c1218"/><text x="182" y="65" fill="#6f7f90" font-size="12" font-family="Arial">app-preview / retail-pos</text>
+      <rect x="76" y="116" width="848" height="500" rx="18" fill="#1c1630"/><text x="112" y="162" fill="#be8cff" font-size="15" font-weight="700" font-family="Arial">SUPPLEMENTS POS</text><text x="112" y="197" fill="#eef3f8" font-size="28" font-weight="700" font-family="Arial">Sales at a glance.</text>
+        <rect x="112" y="225" width="228" height="110" rx="16" fill="#141b24"/><text x="135" y="258" fill="#8090a2" font-size="11" font-family="Arial">TODAY SALES</text><text x="135" y="300" fill="#be8cff" font-size="28" font-weight="700" font-family="Arial">18,420</text>
+        <rect x="358" y="225" width="228" height="110" rx="16" fill="#141b24"/><text x="381" y="258" fill="#8090a2" font-size="11" font-family="Arial">PRODUCTS</text><text x="381" y="300" fill="#eef3f8" font-size="28" font-weight="700" font-family="Arial">482</text>
+        <rect x="604" y="225" width="280" height="110" rx="16" fill="#141b24"/><text x="627" y="258" fill="#8090a2" font-size="11" font-family="Arial">LOW STOCK</text><text x="627" y="300" fill="#ff9f7a" font-size="28" font-weight="700" font-family="Arial">17</text>
+        <rect x="112" y="355" width="500" height="241" rx="16" fill="#1a222d"/><text x="135" y="388" fill="#8090a2" font-size="11" font-family="Arial">REVENUE</text><polyline points="140,545 195,502 251,518 305,458 359,470 414,420 470,440 526,394 576,404" fill="none" stroke="#be8cff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="634" y="355" width="250" height="241" rx="16" fill="#1a222d"/><text x="658" y="388" fill="#8090a2" font-size="11" font-family="Arial">INVENTORY</text><circle cx="757" cy="483" r="58" fill="none" stroke="#344052" stroke-width="14"/><path d="M757 425 A58 58 0 1 1 711 519" fill="none" stroke="#be8cff" stroke-width="14" stroke-linecap="round"/><text x="757" y="491" text-anchor="middle" fill="#eef3f8" font-size="22" font-weight="700" font-family="Arial">91%</text>
+      <rect x="801" y="48" width="110" height="24" rx="12" fill="#be8cff" opacity=".12"/><text x="856" y="65" text-anchor="middle" fill="#be8cff" font-size="11" font-weight="700" font-family="Arial">RETAIL POS</text>
+    </svg>

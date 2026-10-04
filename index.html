@@ -1,145 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html data-theme="dark" dir="ltr" lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio of Peter Elia Nasseem Fanous, full stack developer specializing in POS, gym management, and coaching platforms.">
-  <meta name="author" content="Peter Elia Nasseem Fanous">
-  <meta name="copyright" content="Copyright 2026 Peter Elia Nasseem Fanous. All rights reserved.">
-  <title>Peter Elia | Full Stack Developer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <script defer src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+<meta content="#0a0a0a" name="theme-color"/>
+<meta content="Portfolio of Peter Elia Nasseem Fanous, full stack developer specializing in online stores, POS, gym management, and coaching platforms." name="description"/>
+<meta content="Peter Elia Nasseem Fanous" name="author"/>
+<meta content="Copyright 2026 Peter Elia Nasseem Fanous. All rights reserved." name="copyright"/>
+<title>Peter Elia | Full Stack Developer</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/>
+<script defer="" src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
 </head>
 <body>
-  <canvas id="matrix-canvas"></canvas>
-  <canvas id="particles-canvas"></canvas>
-
-  <div class="sidebar-overlay" id="sidebar-overlay" aria-hidden="true"></div>
-
-  <header class="mobile-topbar" id="mobile-topbar" aria-label="Mobile navigation">
-    <button type="button" class="sidebar-toggle" id="sidebar-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="sidebar">
-      <iconify-icon class="toggle-icon-open" icon="solar:hamburger-menu-bold"></iconify-icon>
-      <iconify-icon class="toggle-icon-close" icon="solar:close-circle-bold"></iconify-icon>
-    </button>
-    <a class="mobile-topbar-brand" href="#hero" aria-label="Home">
-      <span class="logo-icon interactive-icon">
-        <iconify-icon icon="solar:code-square-bold"></iconify-icon>
-      </span>
-      <span class="logo-text">Peter Elia</span>
-    </a>
-    <div class="mobile-topbar-status" aria-label="Status online">
-      <span class="status-dot"></span>
-      <span class="status-text">online</span>
-    </div>
-  </header>
-
-  <aside class="sidebar" id="sidebar" aria-label="Main navigation">
-    <div class="sidebar-header">
-      <a class="sidebar-logo" href="#hero" aria-label="Home">
-        <span class="logo-icon interactive-icon">
-          <iconify-icon icon="solar:code-square-bold"></iconify-icon>
-        </span>
-        <span class="logo-text">Peter Elia</span>
-      </a>
-    </div>
-
-    <nav class="sidebar-nav" aria-label="Sections">
-      <ul class="sidebar-links">
-        <li><a href="#hero" class="sidebar-link active" data-tooltip="Home"><iconify-icon icon="solar:home-2-bold"></iconify-icon><span>home</span></a></li>
-        <li><a href="#about" class="sidebar-link" data-tooltip="About"><iconify-icon icon="solar:user-rounded-bold"></iconify-icon><span>about</span></a></li>
-        <li><a href="#skills" class="sidebar-link" data-tooltip="Skills"><iconify-icon icon="solar:cpu-bold"></iconify-icon><span>skills</span></a></li>
-        <li><a href="#projects" class="sidebar-link" data-tooltip="Projects"><iconify-icon icon="solar:case-round-bold"></iconify-icon><span>projects</span></a></li>
-        <li><a href="#contact" class="sidebar-link" data-tooltip="Contact"><iconify-icon icon="solar:chat-round-dots-bold"></iconify-icon><span>contact</span></a></li>
-      </ul>
-    </nav>
-
-    <div class="sidebar-footer">
-      <div class="sidebar-status">
-        <iconify-icon class="status-icon interactive-icon" icon="solar:bolt-circle-bold"></iconify-icon>
-        <span class="status-dot"></span>
-        <span class="status-text">online</span>
-      </div>
-      <div class="sidebar-social">
-        <a href="https://github.com/beterelea020-alt" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub"><iconify-icon icon="mdi:github"></iconify-icon></a>
-        <a href="https://www.linkedin.com/in/peter-elea-71689935a/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn"><iconify-icon icon="mdi:linkedin"></iconify-icon></a>
-        <a href="mailto:beterelea020@gmail.com" class="social-link" aria-label="Email"><iconify-icon icon="solar:letter-bold"></iconify-icon></a>
-      </div>
-    </div>
-  </aside>
-
-  <main class="main-content" id="main-content">
-  <section id="hero" class="section hero-section">
-    <div class="hero-content">
-      <div class="terminal-window">
-        <div class="terminal-header">
-          <div class="terminal-dots">
-            <span class="dot red"></span>
-            <span class="dot yellow"></span>
-            <span class="dot green"></span>
-          </div>
-          <span class="terminal-title">
-            <iconify-icon icon="solar:terminal-bold"></iconify-icon>
+<canvas id="matrix-canvas"></canvas>
+<canvas id="particles-canvas"></canvas>
+<div aria-hidden="true" class="sidebar-overlay" id="sidebar-overlay"></div>
+<header aria-label="Mobile navigation" class="mobile-topbar" id="mobile-topbar">
+<button aria-controls="sidebar" aria-expanded="false" aria-label="Open navigation menu" class="sidebar-toggle" id="sidebar-toggle" type="button">
+<iconify-icon class="toggle-icon-open" icon="solar:hamburger-menu-bold"></iconify-icon>
+<iconify-icon class="toggle-icon-close" icon="solar:close-circle-bold"></iconify-icon>
+</button>
+<a aria-label="Home" class="mobile-topbar-brand" href="#hero">
+<span class="logo-icon interactive-icon">
+<iconify-icon icon="solar:code-square-bold"></iconify-icon>
+</span>
+<span class="logo-text">Peter Elia</span>
+</a>
+<div aria-label="Status online" class="mobile-topbar-status" data-i18n-label="status.online">
+<span class="status-dot"></span>
+<span class="status-text" data-i18n="status.online">online</span>
+</div>
+<div class="mobile-topbar-actions"><button aria-label="Toggle theme" class="mobile-control" id="mobile-theme-toggle" type="button"><iconify-icon icon="solar:moon-bold" id="mobile-theme-icon"></iconify-icon></button><button aria-label="Switch language" class="mobile-control language-control" id="mobile-language-toggle" type="button">عربي</button></div></header>
+<aside aria-label="Main navigation" class="sidebar" id="sidebar">
+<div class="sidebar-header">
+<a aria-label="Home" class="sidebar-logo" href="#hero">
+<span class="logo-icon interactive-icon">
+<iconify-icon icon="solar:code-square-bold"></iconify-icon>
+</span>
+<span class="logo-text">Peter Elia</span>
+</a>
+</div>
+<nav aria-label="Sections" class="sidebar-nav">
+<ul class="sidebar-links">
+<li><a class="sidebar-link active" data-tooltip="Home" href="#hero"><iconify-icon icon="solar:home-2-bold"></iconify-icon><span data-i18n="nav.home">home</span></a></li>
+<li><a class="sidebar-link" data-tooltip="About" href="#about"><iconify-icon icon="solar:user-rounded-bold"></iconify-icon><span data-i18n="nav.about">about</span></a></li>
+<li><a class="sidebar-link" data-tooltip="Skills" href="#skills"><iconify-icon icon="solar:cpu-bold"></iconify-icon><span data-i18n="nav.skills">skills</span></a></li>
+<li><a class="sidebar-link" data-tooltip="Projects" href="#projects"><iconify-icon icon="solar:case-round-bold"></iconify-icon><span data-i18n="nav.projects">projects</span></a></li>
+<li><a class="sidebar-link" data-tooltip="Contact" href="#contact"><iconify-icon icon="solar:chat-round-dots-bold"></iconify-icon><span data-i18n="nav.contact">contact</span></a></li>
+</ul>
+</nav>
+<div class="sidebar-footer">
+<div class="sidebar-status">
+<iconify-icon class="status-icon interactive-icon" icon="solar:bolt-circle-bold"></iconify-icon>
+<span class="status-dot"></span>
+<span class="status-text" data-i18n="status.online">online</span>
+</div>
+<div class="sidebar-social">
+<a aria-label="GitHub" class="social-link" href="https://github.com/beterelea020-alt" rel="noopener noreferrer" target="_blank"><iconify-icon icon="mdi:github"></iconify-icon></a>
+<a aria-label="LinkedIn" class="social-link" href="https://www.linkedin.com/in/peter-elea-71689935a/" rel="noopener noreferrer" target="_blank"><iconify-icon icon="mdi:linkedin"></iconify-icon></a>
+<a aria-label="Email" class="social-link" href="mailto:beterelea020@gmail.com"><iconify-icon icon="solar:letter-bold"></iconify-icon></a>
+</div><div class="sidebar-controls"><button aria-label="Toggle theme" class="sidebar-control" id="theme-toggle" type="button"><iconify-icon icon="solar:moon-stars-bold"></iconify-icon><span data-i18n="theme.toggle">dark mode</span></button><button aria-label="Switch language" class="sidebar-control" id="language-toggle" type="button"><iconify-icon icon="solar:global-bold"></iconify-icon><span data-i18n="language.toggle">عربي</span></button></div>
+</div>
+</aside>
+<main class="main-content" id="main-content">
+<section class="section hero-section" id="hero">
+<div class="hero-content">
+<div class="terminal-window">
+<div class="terminal-header">
+<div class="terminal-dots">
+<span class="dot red"></span>
+<span class="dot yellow"></span>
+<span class="dot green"></span>
+</div>
+<span class="terminal-title">
+<iconify-icon icon="solar:terminal-bold"></iconify-icon>
             ~/portfolio - bash
           </span>
-        </div>
-        <div class="terminal-body">
-          <div class="hero-chip">
-            <iconify-icon class="interactive-icon" icon="solar:stars-bold-duotone"></iconify-icon>
-            <span>Premium UI Portfolio</span>
-          </div>
-          <div class="code-line"><span class="prompt">$</span><span class="command">whoami</span></div>
-          <div class="code-line output"><span id="typing-name" class="typing-text"></span><span class="cursor">|</span></div>
-          <div class="code-line"><span class="prompt">$</span><span class="command">cat role.txt</span></div>
-          <div class="code-line output"><span id="typing-role" class="typing-text"></span></div>
-          <div class="code-line"><span class="prompt">$</span><span class="command">echo $PASSION</span></div>
-          <div class="code-line output"><span id="typing-passion" class="typing-text"></span></div>
-        </div>
-      </div>
-      <div class="hero-visual-stack">
-        <div class="hero-visual-card" id="hero-visual">
-          <div class="code-rain" aria-hidden="true">
-            <span>const portfolio = "PeterElia.dev";</span>
-            <span>build.cleanUI();</span>
-            <span>deploy({ responsive: true });</span>
-            <span>skills.map(render);</span>
-            <span>return premiumExperience;</span>
-            <span>async function createImpact()</span>
-          </div>
-          <div class="hero-image-shell">
-            <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=900&q=80" alt="Developer workspace with code on screen">
-          </div>
-          <div class="hero-visual-badge">
-            <iconify-icon icon="solar:programming-bold-duotone"></iconify-icon>
-            <span>Code-Driven UI</span>
-          </div>
-        </div>
-        <div class="scroll-indicator">
-          <span class="scroll-text">scroll down</span>
-          <iconify-icon class="scroll-icon interactive-icon" icon="solar:round-arrow-down-bold"></iconify-icon>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="about" class="section about-section">
-    <div class="section-header">
-      <span class="comment"><iconify-icon icon="solar:user-id-bold"></iconify-icon> about me</span>
-      <h2 class="glitch" data-text="About()">About()</h2>
-    </div>
-    <div class="about-container">
-      <div class="code-editor">
-        <div class="editor-header">
-          <div class="editor-tabs">
-            <span class="tab active"><iconify-icon icon="solar:file-text-bold"></iconify-icon> about.js</span>
-            <span class="tab"><iconify-icon icon="solar:settings-bold"></iconify-icon> config.json</span>
-          </div>
-        </div>
-        <div class="editor-body">
-          <div class="line-numbers" id="about-lines"></div>
-          <div class="code-content"><pre><code><span class="keyword">const</span> <span class="variable">developer</span> = {
+</div>
+<div class="terminal-body">
+<div class="hero-chip">
+<iconify-icon class="interactive-icon" icon="solar:stars-bold-duotone"></iconify-icon>
+<span data-i18n="hero.chip">PeterElia.dev</span>
+</div>
+<div class="code-line"><span class="prompt">$</span><span class="command">whoami</span></div>
+<div class="code-line output"><span class="typing-text" id="typing-name"></span><span class="cursor">|</span></div>
+<div class="code-line"><span class="prompt">$</span><span class="command">cat role.txt</span></div>
+<div class="code-line output"><span class="typing-text" id="typing-role"></span></div>
+<div class="code-line"><span class="prompt">$</span><span class="command">echo $PASSION</span></div>
+<div class="code-line output"><span class="typing-text" id="typing-passion"></span></div>
+</div>
+</div>
+<div class="hero-visual-stack">
+<div class="hero-visual-card" id="hero-visual">
+<div aria-hidden="true" class="code-rain">
+<span>const portfolio = "PeterElia.dev";</span>
+<span>build.cleanUI();</span>
+<span>deploy({ responsive: true });</span>
+<span>skills.map(render);</span>
+<span>return premiumExperience;</span>
+<span>async function createImpact()</span>
+</div>
+<div class="hero-image-shell">
+<img alt="Developer workspace" src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&amp;fit=crop&amp;w=900&amp;q=80"/>
+</div>
+<div class="hero-visual-badge">
+<iconify-icon icon="solar:programming-bold-duotone"></iconify-icon>
+<span data-i18n="hero.badge">Code-Driven UI</span>
+</div>
+</div>
+<div class="scroll-indicator">
+<span class="scroll-text" data-i18n="hero.scroll">scroll down</span>
+<iconify-icon class="scroll-icon interactive-icon" icon="solar:round-arrow-down-bold"></iconify-icon>
+</div>
+</div>
+</div>
+</section>
+<section class="section about-section" id="about">
+<div class="section-header">
+<span class="comment" data-i18n="section.aboutKicker"><iconify-icon icon="solar:user-id-bold"></iconify-icon></span>
+<h2 class="glitch" data-i18n="section.aboutTitle" data-text="About()">About()</h2>
+</div>
+<div class="about-container">
+<div class="code-editor">
+<div class="editor-header">
+<div class="editor-tabs">
+<span class="tab active"><iconify-icon icon="solar:file-text-bold"></iconify-icon> about.js</span>
+<span class="tab"><iconify-icon icon="solar:settings-bold"></iconify-icon> config.json</span>
+</div>
+</div>
+<div class="editor-body">
+<div class="line-numbers" id="about-lines"></div>
+<div class="code-content"><pre><code id="about-code"><span class="keyword">const</span> <span class="variable">developer</span> = {
   <span class="property">name</span>: <span class="string">"Peter Elia Nasseem Fanous"</span>,
   <span class="property">brand</span>: <span class="string">"PeterElia.dev"</span>,
   <span class="property">title</span>: <span class="string">"Full Stack Developer"</span>,
@@ -151,147 +146,199 @@
     <span class="keyword">return</span> <span class="string">"I build point-of-sale, gym, and coaching platforms that run real businesses."</span>;
   }
 };</code></pre></div>
-        </div>
-      </div>
-      <div class="about-stats">
-        <div class="stat-card"><div class="stat-icon interactive-icon"><iconify-icon icon="solar:cup-star-bold"></iconify-icon></div><div class="stat-number" data-target="20">0</div><div class="stat-label">projects completed</div></div>
-        <div class="stat-card"><div class="stat-icon interactive-icon"><iconify-icon icon="solar:rocket-bold-duotone"></iconify-icon></div><div class="stat-number" data-target="3">0</div><div class="stat-label">years experience</div></div>
-        <div class="stat-card"><div class="stat-icon interactive-icon"><iconify-icon icon="solar:code-2-bold"></iconify-icon></div><div class="stat-number" data-target="800">0</div><div class="stat-label">commits this year</div></div>
-        <div class="stat-card"><div class="stat-icon interactive-icon"><iconify-icon icon="solar:cup-hot-bold"></iconify-icon></div><div class="stat-number" data-target="99">0</div><div class="stat-label">cups of coffee</div></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="skills" class="section skills-section">
-    <div class="section-header">
-      <span class="comment"><iconify-icon icon="solar:cpu-bold"></iconify-icon> my skills</span>
-      <h2 class="glitch" data-text="Skills[]">Skills[]</h2>
-    </div>
-    <div class="skills-container">
-      <div class="skill-category">
-        <div class="category-header"><span class="folder-icon interactive-icon"><iconify-icon icon="solar:monitor-smartphone-bold"></iconify-icon></span><span class="category-name">frontend/</span></div>
-        <div class="skill-items">
-          <div class="skill-item" data-level="90"><span class="skill-name">React.js</span><div class="skill-bar"><div class="skill-fill" style="--level: 90%"></div></div><span class="skill-percent">90%</span></div>
-          <div class="skill-item" data-level="88"><span class="skill-name">JavaScript</span><div class="skill-bar"><div class="skill-fill" style="--level: 88%"></div></div><span class="skill-percent">88%</span></div>
-          <div class="skill-item" data-level="85"><span class="skill-name">HTML/CSS</span><div class="skill-bar"><div class="skill-fill" style="--level: 85%"></div></div><span class="skill-percent">85%</span></div>
-        </div>
-      </div>
-      <div class="skill-category">
-        <div class="category-header"><span class="folder-icon interactive-icon"><iconify-icon icon="solar:server-square-bold"></iconify-icon></span><span class="category-name">backend/</span></div>
-        <div class="skill-items">
-          <div class="skill-item" data-level="92"><span class="skill-name">Node.js</span><div class="skill-bar"><div class="skill-fill" style="--level: 92%"></div></div><span class="skill-percent">92%</span></div>
-          <div class="skill-item" data-level="85"><span class="skill-name">Express</span><div class="skill-bar"><div class="skill-fill" style="--level: 85%"></div></div><span class="skill-percent">85%</span></div>
-          <div class="skill-item" data-level="88"><span class="skill-name">MongoDB</span><div class="skill-bar"><div class="skill-fill" style="--level: 88%"></div></div><span class="skill-percent">88%</span></div>
-        </div>
-      </div>
-      <div class="skill-category">
-        <div class="category-header"><span class="folder-icon interactive-icon"><iconify-icon icon="solar:cloud-bold-duotone"></iconify-icon></span><span class="category-name">systems/</span></div>
-        <div class="skill-items">
-          <div class="skill-item" data-level="90"><span class="skill-name">POS Systems</span><div class="skill-bar"><div class="skill-fill" style="--level: 90%"></div></div><span class="skill-percent">90%</span></div>
-          <div class="skill-item" data-level="80"><span class="skill-name">Authentication</span><div class="skill-bar"><div class="skill-fill" style="--level: 80%"></div></div><span class="skill-percent">80%</span></div>
-          <div class="skill-item" data-level="82"><span class="skill-name">Git</span><div class="skill-bar"><div class="skill-fill" style="--level: 82%"></div></div><span class="skill-percent">82%</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="projects" class="section projects-section">
-    <div class="section-header">
-      <span class="comment"><iconify-icon icon="solar:case-round-bold"></iconify-icon> my projects</span>
-      <h2 class="glitch" data-text="Projects{}">Projects{}</h2>
-    </div>
-    <div class="projects-grid">
-      <article class="project-card">
-        <div class="project-header"><div class="project-dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div><span class="project-file"><iconify-icon icon="logos:javascript"></iconify-icon> ps-shop-pro.js</span></div>
-        <div class="project-body"><pre><code><span class="keyword">export</span> <span class="keyword">const</span> <span class="variable">PSShopPro</span> = () =&gt; {
-  <span class="comment">// PlayStation rental & sales management</span>
-  <span class="keyword">const</span> features = [<span class="string">"Sessions"</span>, <span class="string">"Licensing"</span>, <span class="string">"Sales"</span>];
-};</code></pre></div>
-        <div class="project-footer"><div class="project-tags"><span class="tag-item">JavaScript</span><span class="tag-item">Node.js</span><span class="tag-item">Windows</span></div><div class="project-links"><a href="#" class="project-link"><iconify-icon icon="solar:play-circle-bold"></iconify-icon> Live</a><a href="https://github.com/beterelea020-alt" target="_blank" rel="noopener noreferrer" class="project-link"><iconify-icon icon="solar:code-square-bold"></iconify-icon> Code</a></div></div>
-      </article>
-      <article class="project-card">
-        <div class="project-header"><div class="project-dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div><span class="project-file"><iconify-icon icon="logos:react"></iconify-icon> supplements-pos.jsx</span></div>
-        <div class="project-body"><pre><code><span class="keyword">export</span> <span class="keyword">const</span> <span class="variable">SupplementsPOS</span> = () =&gt; {
-  <span class="comment">// Point-of-sale for selling products</span>
-  <span class="keyword">const</span> modules = [<span class="string">"Inventory"</span>, <span class="string">"Invoices"</span>, <span class="string">"Reports"</span>];
-};</code></pre></div>
-        <div class="project-footer"><div class="project-tags"><span class="tag-item">React</span><span class="tag-item">Node.js</span><span class="tag-item">MongoDB</span></div><div class="project-links"><a href="#" class="project-link"><iconify-icon icon="solar:play-circle-bold"></iconify-icon> Live</a><a href="https://github.com/beterelea020-alt" target="_blank" rel="noopener noreferrer" class="project-link"><iconify-icon icon="solar:code-square-bold"></iconify-icon> Code</a></div></div>
-      </article>
-      <article class="project-card">
-        <div class="project-header"><div class="project-dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div><span class="project-file"><iconify-icon icon="logos:nodejs-icon"></iconify-icon> gym-system.js</span></div>
-        <div class="project-body"><pre><code><span class="keyword">class</span> <span class="variable">GymSystem</span> {
-  <span class="comment">// Members, subscriptions & attendance</span>
-  modules = [<span class="string">"Members"</span>, <span class="string">"Subscriptions"</span>, <span class="string">"Check-in"</span>];
-}</code></pre></div>
-        <div class="project-footer"><div class="project-tags"><span class="tag-item">Node.js</span><span class="tag-item">Express</span><span class="tag-item">MongoDB</span></div><div class="project-links"><a href="#" class="project-link"><iconify-icon icon="solar:play-circle-bold"></iconify-icon> Live</a><a href="https://github.com/beterelea020-alt" target="_blank" rel="noopener noreferrer" class="project-link"><iconify-icon icon="solar:code-square-bold"></iconify-icon> Code</a></div></div>
-      </article>
-      <article class="project-card">
-        <div class="project-header"><div class="project-dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div><span class="project-file"><iconify-icon icon="logos:react"></iconify-icon> coachpro.jsx</span></div>
-        <div class="project-body"><pre><code><span class="keyword">export</span> <span class="keyword">const</span> <span class="variable">CoachPro</span> = () =&gt; {
-  <span class="comment">// Coaching platform: admin, coach & client views</span>
-  <span class="keyword">const</span> roles = [<span class="string">"Admin"</span>, <span class="string">"Coach"</span>, <span class="string">"Client"</span>];
-};</code></pre></div>
-        <div class="project-footer"><div class="project-tags"><span class="tag-item">React</span><span class="tag-item">Node.js</span><span class="tag-item">Auth</span></div><div class="project-links"><a href="#" class="project-link"><iconify-icon icon="solar:play-circle-bold"></iconify-icon> Live</a><a href="https://github.com/beterelea020-alt" target="_blank" rel="noopener noreferrer" class="project-link"><iconify-icon icon="solar:code-square-bold"></iconify-icon> Code</a></div></div>
-      </article>
-    </div>
-  </section>
-
-  <section id="contact" class="section contact-section">
-    <div class="section-header">
-      <span class="comment"><iconify-icon icon="solar:letter-bold"></iconify-icon> get in touch</span>
-      <h2 class="glitch" data-text="Contact()">Contact()</h2>
-    </div>
-    <div class="contact-container">
-      <div class="contact-terminal">
-        <div class="terminal-header"><div class="terminal-dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div><span class="terminal-title"><iconify-icon icon="solar:chat-round-call-bold"></iconify-icon> ~/contact - send_message</span></div>
-        <div class="terminal-body contact-form-body">
-          <form id="contact-form" class="cli-form">
-            <div class="form-line"><span class="prompt"><iconify-icon icon="solar:user-rounded-bold"></iconify-icon></span><input type="text" id="name" class="cli-input" placeholder="Enter your name..." required></div>
-            <div class="form-line"><span class="prompt"><iconify-icon icon="solar:letter-bold"></iconify-icon></span><input type="email" id="email" class="cli-input" placeholder="Enter your email..." required></div>
-            <div class="form-line"><span class="prompt"><iconify-icon icon="solar:document-text-bold"></iconify-icon></span><input type="text" id="subject" class="cli-input" placeholder="Enter subject..." required></div>
-            <div class="form-line"><span class="prompt"><iconify-icon icon="solar:pen-new-square-bold"></iconify-icon></span><textarea id="message" class="cli-input cli-textarea" placeholder="Type your message..." required></textarea></div>
-            <div class="form-line"><button type="submit" class="submit-btn"><iconify-icon icon="solar:plain-2-bold"></iconify-icon> send_message --ui-only</button></div>
-            <div id="form-response" class="form-response"></div>
-          </form>
-        </div>
-      </div>
-      <div class="contact-info">
-        <a class="linkedin-card" href="https://www.linkedin.com/in/peter-elea-71689935a/" target="_blank" rel="noopener noreferrer" aria-label="Peter Elia LinkedIn profile">
-          <span class="linkedin-card-icon interactive-icon"><iconify-icon icon="mdi:linkedin"></iconify-icon></span>
-          <span class="linkedin-card-content">
-            <span class="linkedin-card-label">LinkedIn Profile</span>
-            <strong>Peter Elia Nasseem Fanous</strong>
-            <small>PeterElia.dev</small>
-          </span>
-          <iconify-icon class="linkedin-card-arrow" icon="solar:arrow-right-up-bold"></iconify-icon>
-        </a>
-        <div class="info-block"><pre><code><span class="keyword">const</span> <span class="variable">links</span> = {
+</div>
+</div>
+<div class="about-stats">
+<div class="stat-card"><div class="stat-icon interactive-icon"><iconify-icon icon="solar:cup-star-bold"></iconify-icon></div><div class="stat-number" data-target="20">0</div><div class="stat-label" data-i18n="stat.0">projects completed</div></div>
+<div class="stat-card"><div class="stat-icon interactive-icon"><iconify-icon icon="solar:rocket-bold-duotone"></iconify-icon></div><div class="stat-number" data-target="3">0</div><div class="stat-label" data-i18n="stat.1">years experience</div></div>
+<div class="stat-card"><div class="stat-icon interactive-icon"><iconify-icon icon="solar:code-2-bold"></iconify-icon></div><div class="stat-number" data-target="800">0</div><div class="stat-label" data-i18n="stat.2">commits this year</div></div>
+<div class="stat-card"><div class="stat-icon interactive-icon"><iconify-icon icon="solar:cup-hot-bold"></iconify-icon></div><div class="stat-number" data-target="99">0</div><div class="stat-label" data-i18n="stat.3">cups of coffee</div></div>
+</div>
+</div>
+</section>
+<section class="section skills-section" id="skills">
+<div class="section-header">
+<span class="comment" data-i18n="section.skillsKicker"><iconify-icon icon="solar:cpu-bold"></iconify-icon></span>
+<h2 class="glitch" data-i18n="section.skillsTitle" data-text="Skills[]">Skills[]</h2>
+</div>
+<div class="skills-container">
+<div class="skill-category">
+<div class="category-header"><span class="folder-icon interactive-icon"><iconify-icon icon="solar:monitor-smartphone-bold"></iconify-icon></span><span class="category-name" data-i18n="skills.frontend">frontend/</span></div>
+<div class="skill-items">
+<div class="skill-item" data-level="90"><span class="skill-name">React.js</span><div class="skill-bar"><div class="skill-fill" style="--level: 90%"></div></div><span class="skill-percent">90%</span></div>
+<div class="skill-item" data-level="88"><span class="skill-name">JavaScript</span><div class="skill-bar"><div class="skill-fill" style="--level: 88%"></div></div><span class="skill-percent">88%</span></div>
+<div class="skill-item" data-level="85"><span class="skill-name">HTML/CSS</span><div class="skill-bar"><div class="skill-fill" style="--level: 85%"></div></div><span class="skill-percent">85%</span></div>
+</div>
+</div>
+<div class="skill-category">
+<div class="category-header"><span class="folder-icon interactive-icon"><iconify-icon icon="solar:server-square-bold"></iconify-icon></span><span class="category-name" data-i18n="skills.backend">backend/</span></div>
+<div class="skill-items">
+<div class="skill-item" data-level="92"><span class="skill-name">Node.js</span><div class="skill-bar"><div class="skill-fill" style="--level: 92%"></div></div><span class="skill-percent">92%</span></div>
+<div class="skill-item" data-level="85"><span class="skill-name">Express</span><div class="skill-bar"><div class="skill-fill" style="--level: 85%"></div></div><span class="skill-percent">85%</span></div>
+<div class="skill-item" data-level="88"><span class="skill-name">MongoDB</span><div class="skill-bar"><div class="skill-fill" style="--level: 88%"></div></div><span class="skill-percent">88%</span></div>
+</div>
+</div>
+<div class="skill-category">
+<div class="category-header"><span class="folder-icon interactive-icon"><iconify-icon icon="solar:cloud-bold-duotone"></iconify-icon></span><span class="category-name" data-i18n="skills.database">systems/</span></div>
+<div class="skill-items">
+<div class="skill-item" data-level="90"><span class="skill-name">POS Systems</span><div class="skill-bar"><div class="skill-fill" style="--level: 90%"></div></div><span class="skill-percent">90%</span></div>
+<div class="skill-item" data-level="80"><span class="skill-name">Authentication</span><div class="skill-bar"><div class="skill-fill" style="--level: 80%"></div></div><span class="skill-percent">80%</span></div>
+<div class="skill-item" data-level="82"><span class="skill-name">Git</span><div class="skill-bar"><div class="skill-fill" style="--level: 82%"></div></div><span class="skill-percent">82%</span></div>
+</div>
+</div>
+</div>
+</section>
+<section class="section projects-section" id="projects">
+<div class="section-header">
+<span class="comment" data-i18n="section.projectsKicker"><iconify-icon icon="solar:case-round-bold"></iconify-icon></span>
+<h2 class="glitch" data-i18n="section.projectsTitle" data-text="Projects{}">Projects{}</h2>
+</div>
+<div aria-label="Filter projects" class="project-filter" role="group">
+<button aria-pressed="true" class="filter-chip" data-filter="all" data-i18n="projects.filters.all" type="button">all<span class="count"></span></button>
+<button aria-pressed="false" class="filter-chip" data-filter="store" data-i18n="projects.filters.stores" type="button">stores<span class="count"></span></button>
+<button aria-pressed="false" class="filter-chip" data-filter="app" data-i18n="projects.filters.apps" type="button">apps<span class="count"></span></button>
+<button aria-pressed="false" class="filter-chip" data-filter="system" data-i18n="projects.filters.systems" type="button">systems<span class="count"></span></button>
+</div>
+<div class="projects-grid" id="projects-grid">
+<article class="project-card" data-cat="store" data-project="watch-store">
+<div class="project-header"><div class="project-dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div><span class="project-file"><iconify-icon icon="logos:supabase-icon"></iconify-icon> watch-store.js</span></div>
+<a aria-label="Open RAW Watches live" class="project-preview" href="https://watch-store-delta-red.vercel.app/" rel="noopener noreferrer" target="_blank"><span class="portfolio-browser"><span class="portfolio-browser-bar"><span class="portfolio-browser-dots"><i class="dot red"></i><i class="dot yellow"></i><i class="dot green"></i></span><span class="portfolio-browser-url">watch-store.vercel.app</span></span><span class="portfolio-browser-screen"><img alt="Preview of RAW Watches" data-slug="watch-store" decoding="async" height="560" loading="lazy" width="900"/></span></span><span class="preview-badge"><span class="status-dot"></span> live</span></a>
+<div class="project-info"><h3 data-i18n="project.watch-store.title">RAW Watches</h3><p data-i18n="project.watch-store.desc">Full watch store: watch finder, specs, cart, Egypt-ready checkout with WhatsApp orders, coupons, customer accounts and an admin dashboard on Supabase.</p></div>
+<div class="project-footer"><div class="project-tags"><span class="tag-item">JavaScript</span><span class="tag-item">Supabase</span><span class="tag-item">Admin Panel</span></div><div class="project-links"><button aria-label="View details for RAW Watches" class="project-link detail-btn" data-preview="watch-store" type="button"><iconify-icon icon="solar:eye-bold"></iconify-icon> Details</button><a class="project-link" href="https://watch-store-delta-red.vercel.app/" rel="noopener noreferrer" target="_blank"><iconify-icon icon="solar:play-circle-bold"></iconify-icon> Live</a><a class="project-link" href="https://github.com/beterelea020-alt/watch-store" rel="noopener noreferrer" target="_blank"><iconify-icon icon="solar:code-square-bold"></iconify-icon> Code</a></div></div>
+</article>
+<article class="project-card" data-cat="store" data-project="coffee-store">
+<div class="project-header"><div class="project-dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div><span class="project-file"><iconify-icon icon="logos:javascript"></iconify-icon> coffee-store.js</span></div>
+<a aria-label="Open RAW Coffee House live" class="project-preview" href="https://coffee-store-zeta-nine.vercel.app/" rel="noopener noreferrer" target="_blank"><span class="portfolio-browser"><span class="portfolio-browser-bar"><span class="portfolio-browser-dots"><i class="dot red"></i><i class="dot yellow"></i><i class="dot green"></i></span><span class="portfolio-browser-url">coffee-store.vercel.app</span></span><span class="portfolio-browser-screen"><img alt="Preview of RAW Coffee House" data-slug="coffee-store" decoding="async" height="560" loading="lazy" width="900"/></span></span><span class="preview-badge"><span class="status-dot"></span> live</span></a>
+<div class="project-info"><h3 data-i18n="project.coffee-store.title">RAW Coffee House</h3><p data-i18n="project.coffee-store.desc">Arabic RTL coffee store: coffee finder quiz, weight and grind options, live cart with free-shipping progress, governorate checkout, WhatsApp-ready orders.</p></div>
+<div class="project-footer"><div class="project-tags"><span class="tag-item">JavaScript</span><span class="tag-item">RTL</span><span class="tag-item">WhatsApp</span></div><div class="project-links"><button aria-label="View details for RAW Coffee House" class="project-link detail-btn" data-preview="coffee-store" type="button"><iconify-icon icon="solar:eye-bold"></iconify-icon> Details</button><a class="project-link" href="https://coffee-store-zeta-nine.vercel.app/" rel="noopener noreferrer" target="_blank"><iconify-icon icon="solar:play-circle-bold"></iconify-icon> Live</a><a class="project-link" href="https://github.com/beterelea020-alt/coffee-store" rel="noopener noreferrer" target="_blank"><iconify-icon icon="solar:code-square-bold"></iconify-icon> Code</a></div></div>
+</article>
+<article class="project-card" data-cat="app" data-project="safar-psalms">
+<div class="project-header"><div class="project-dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div><span class="project-file"><iconify-icon icon="logos:html-5"></iconify-icon> safar-psalms.html</span></div>
+<a aria-label="Open Safar Al-Mazameer live" class="project-preview" href="https://safar-psalms.vercel.app/" rel="noopener noreferrer" target="_blank"><span class="portfolio-browser"><span class="portfolio-browser-bar"><span class="portfolio-browser-dots"><i class="dot red"></i><i class="dot yellow"></i><i class="dot green"></i></span><span class="portfolio-browser-url">safar-psalms.vercel.app</span></span><span class="portfolio-browser-screen"><img alt="Preview of Safar Al-Mazameer" data-slug="safar-psalms" decoding="async" height="560" loading="lazy" width="900"/></span></span><span class="preview-badge"><span class="status-dot"></span> live</span></a>
+<div class="project-info"><h3 data-i18n="project.safar-psalms.title">Safar Al-Mazameer</h3><p data-i18n="project.safar-psalms.desc">Quiet digital library to read, listen to, memorize and review the Psalms. Works offline, needs no account, keeps progress on the device.</p></div>
+<div class="project-footer"><div class="project-tags"><span class="tag-item">PWA</span><span class="tag-item">Offline</span><span class="tag-item">Multi-page</span></div><div class="project-links"><button aria-label="View details for Safar Al-Mazameer" class="project-link detail-btn" data-preview="safar-psalms" type="button"><iconify-icon icon="solar:eye-bold"></iconify-icon> Details</button><a class="project-link" href="https://safar-psalms.vercel.app/" rel="noopener noreferrer" target="_blank"><iconify-icon icon="solar:play-circle-bold"></iconify-icon> Live</a><a class="project-link" href="https://github.com/beterelea020-alt/safar-psalms" rel="noopener noreferrer" target="_blank"><iconify-icon icon="solar:code-square-bold"></iconify-icon> Code</a></div></div>
+</article>
+<article class="project-card" data-cat="app" data-project="maljaeii">
+<div class="project-header"><div class="project-dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div><span class="project-file"><iconify-icon icon="logos:javascript"></iconify-icon> maljaei.js</span></div>
+<a aria-label="Open Maljaei live" class="project-preview" href="https://maljaeii.vercel.app/" rel="noopener noreferrer" target="_blank"><span class="portfolio-browser"><span class="portfolio-browser-bar"><span class="portfolio-browser-dots"><i class="dot red"></i><i class="dot yellow"></i><i class="dot green"></i></span><span class="portfolio-browser-url">maljaeii.vercel.app</span></span><span class="portfolio-browser-screen"><img alt="Preview of Maljaei" data-slug="maljaeii" decoding="async" height="560" loading="lazy" width="900"/></span></span><span class="preview-badge"><span class="status-dot"></span> live</span></a>
+<div class="project-info"><h3 data-i18n="project.maljaeii.title">Maljaei</h3><p data-i18n="project.maljaeii.desc">Private daily spiritual app: streak tracker, daily checklist, mood-based messages, favorites, prayer-time notifications and an admin panel.</p></div>
+<div class="project-footer"><div class="project-tags"><span class="tag-item">PWA</span><span class="tag-item">localStorage</span><span class="tag-item">Admin Panel</span></div><div class="project-links"><button aria-label="View details for Maljaei" class="project-link detail-btn" data-preview="maljaeii" type="button"><iconify-icon icon="solar:eye-bold"></iconify-icon> Details</button><a class="project-link" href="https://maljaeii.vercel.app/" rel="noopener noreferrer" target="_blank"><iconify-icon icon="solar:play-circle-bold"></iconify-icon> Live</a><a class="project-link" href="https://github.com/beterelea020-alt/Maljaei" rel="noopener noreferrer" target="_blank"><iconify-icon icon="solar:code-square-bold"></iconify-icon> Code</a></div></div>
+</article>
+<article class="project-card" data-cat="app" data-project="george-maria-love">
+<div class="project-header"><div class="project-dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div><span class="project-file"><iconify-icon icon="logos:html-5"></iconify-icon> george-maria-love.html</span></div>
+<a aria-label="Open George &amp; Maria live" class="project-preview" href="https://george-maria-love.vercel.app/" rel="noopener noreferrer" target="_blank"><span class="portfolio-browser"><span class="portfolio-browser-bar"><span class="portfolio-browser-dots"><i class="dot red"></i><i class="dot yellow"></i><i class="dot green"></i></span><span class="portfolio-browser-url">george-maria-love.vercel.app</span></span><span class="portfolio-browser-screen"><img alt="Preview of George &amp; Maria" data-slug="george-maria-love" decoding="async" height="560" loading="lazy" width="900"/></span></span><span class="preview-badge"><span class="status-dot"></span> live</span></a>
+<div class="project-info"><h3 data-i18n="project.george-maria-love.title">George &amp; Maria</h3><p data-i18n="project.george-maria-love.desc">Digital invitation built as a single shareable link, designed to look good on every phone.</p></div>
+<div class="project-footer"><div class="project-tags"><span class="tag-item">HTML/CSS</span><span class="tag-item">JavaScript</span><span class="tag-item">Responsive</span></div><div class="project-links"><button aria-label="View details for George &amp; Maria" class="project-link detail-btn" data-preview="george-maria-love" type="button"><iconify-icon icon="solar:eye-bold"></iconify-icon> Details</button><a class="project-link" href="https://george-maria-love.vercel.app/" rel="noopener noreferrer" target="_blank"><iconify-icon icon="solar:play-circle-bold"></iconify-icon> Live</a><a class="project-link" href="https://github.com/beterelea020-alt/george-maria-love" rel="noopener noreferrer" target="_blank"><iconify-icon icon="solar:code-square-bold"></iconify-icon> Code</a></div></div>
+</article>
+<article class="project-card" data-cat="system" data-project="ps-shop-pro">
+<div class="project-header"><div class="project-dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div><span class="project-file"><iconify-icon icon="logos:javascript"></iconify-icon> ps-shop-pro.js</span></div>
+<div aria-label="View details for PS Shop Pro" class="project-preview" data-preview="ps-shop-pro" role="button" tabindex="0"><span class="portfolio-browser"><span class="portfolio-browser-bar"><span class="portfolio-browser-dots"><i class="dot red"></i><i class="dot yellow"></i><i class="dot green"></i></span><span class="portfolio-browser-url">ps-shop-pro.app</span></span><span class="portfolio-browser-screen"><img alt="Preview of PS Shop Pro" data-slug="ps-shop-pro" decoding="async" height="560" loading="lazy" width="900"/></span></span><span class="preview-badge is-muted">desktop app</span></div>
+<div class="project-info"><h3 data-i18n="project.ps-shop-pro.title">PS Shop Pro</h3><p data-i18n="project.ps-shop-pro.desc">PlayStation cafe management: timed sessions, licensing and sales in one desktop app.</p></div>
+<div class="project-footer"><div class="project-tags"><span class="tag-item">JavaScript</span><span class="tag-item">Node.js</span><span class="tag-item">Windows</span></div><div class="project-links"><button aria-label="View details for PS Shop Pro" class="project-link detail-btn" data-preview="ps-shop-pro" type="button"><iconify-icon icon="solar:eye-bold"></iconify-icon> Details</button><a class="project-link" href="https://github.com/beterelea020-alt" rel="noopener noreferrer" target="_blank"><iconify-icon icon="solar:code-square-bold"></iconify-icon> Code</a></div></div>
+</article>
+<article class="project-card" data-cat="system" data-project="supplements-pos">
+<div class="project-header"><div class="project-dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div><span class="project-file"><iconify-icon icon="logos:react"></iconify-icon> supplements-pos.jsx</span></div>
+<div aria-label="View details for Supplements POS" class="project-preview" data-preview="supplements-pos" role="button" tabindex="0"><span class="portfolio-browser"><span class="portfolio-browser-bar"><span class="portfolio-browser-dots"><i class="dot red"></i><i class="dot yellow"></i><i class="dot green"></i></span><span class="portfolio-browser-url">supplements-pos.app</span></span><span class="portfolio-browser-screen"><img alt="Preview of Supplements POS" data-slug="supplements-pos" decoding="async" height="560" loading="lazy" width="900"/></span></span><span class="preview-badge is-muted">web app</span></div>
+<div class="project-info"><h3 data-i18n="project.supplements-pos.title">Supplements POS</h3><p data-i18n="project.supplements-pos.desc">Point of sale for selling products, with inventory, invoices and reports.</p></div>
+<div class="project-footer"><div class="project-tags"><span class="tag-item">React</span><span class="tag-item">Node.js</span><span class="tag-item">MongoDB</span></div><div class="project-links"><button aria-label="View details for Supplements POS" class="project-link detail-btn" data-preview="supplements-pos" type="button"><iconify-icon icon="solar:eye-bold"></iconify-icon> Details</button><a class="project-link" href="https://github.com/beterelea020-alt" rel="noopener noreferrer" target="_blank"><iconify-icon icon="solar:code-square-bold"></iconify-icon> Code</a></div></div>
+</article>
+<article class="project-card" data-cat="system" data-project="gym-system">
+<div class="project-header"><div class="project-dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div><span class="project-file"><iconify-icon icon="logos:nodejs-icon"></iconify-icon> gym-system.js</span></div>
+<div aria-label="View details for Gym System" class="project-preview" data-preview="gym-system" role="button" tabindex="0"><span class="portfolio-browser"><span class="portfolio-browser-bar"><span class="portfolio-browser-dots"><i class="dot red"></i><i class="dot yellow"></i><i class="dot green"></i></span><span class="portfolio-browser-url">gym-system.app</span></span><span class="portfolio-browser-screen"><img alt="Preview of Gym System" data-slug="gym-system" decoding="async" height="560" loading="lazy" width="900"/></span></span><span class="preview-badge is-muted">web app</span></div>
+<div class="project-info"><h3 data-i18n="project.gym-system.title">Gym System</h3><p data-i18n="project.gym-system.desc">Members, subscriptions and check-in for gyms.</p></div>
+<div class="project-footer"><div class="project-tags"><span class="tag-item">Node.js</span><span class="tag-item">Express</span><span class="tag-item">MongoDB</span></div><div class="project-links"><button aria-label="View details for Gym System" class="project-link detail-btn" data-preview="gym-system" type="button"><iconify-icon icon="solar:eye-bold"></iconify-icon> Details</button><a class="project-link" href="https://github.com/beterelea020-alt" rel="noopener noreferrer" target="_blank"><iconify-icon icon="solar:code-square-bold"></iconify-icon> Code</a></div></div>
+</article>
+<article class="project-card" data-cat="system" data-project="coachpro">
+<div class="project-header"><div class="project-dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div><span class="project-file"><iconify-icon icon="logos:react"></iconify-icon> coachpro.jsx</span></div>
+<div aria-label="View details for CoachPro" class="project-preview" data-preview="coachpro" role="button" tabindex="0"><span class="portfolio-browser"><span class="portfolio-browser-bar"><span class="portfolio-browser-dots"><i class="dot red"></i><i class="dot yellow"></i><i class="dot green"></i></span><span class="portfolio-browser-url">coachpro.app</span></span><span class="portfolio-browser-screen"><img alt="Preview of CoachPro" data-slug="coachpro" decoding="async" height="560" loading="lazy" width="900"/></span></span><span class="preview-badge is-muted">web app</span></div>
+<div class="project-info"><h3 data-i18n="project.coachpro.title">CoachPro</h3><p data-i18n="project.coachpro.desc">Coaching platform with separate admin, coach and client views.</p></div>
+<div class="project-footer"><div class="project-tags"><span class="tag-item">React</span><span class="tag-item">Node.js</span><span class="tag-item">Auth</span></div><div class="project-links"><button aria-label="View details for CoachPro" class="project-link detail-btn" data-preview="coachpro" type="button"><iconify-icon icon="solar:eye-bold"></iconify-icon> Details</button><a class="project-link" href="https://github.com/beterelea020-alt" rel="noopener noreferrer" target="_blank"><iconify-icon icon="solar:code-square-bold"></iconify-icon> Code</a></div></div>
+</article>
+</div>
+</section>
+<section class="section contact-section" id="contact">
+<div class="section-header">
+<span class="comment" data-i18n="section.contactKicker"><iconify-icon icon="solar:letter-bold"></iconify-icon></span>
+<h2 class="glitch" data-i18n="section.contactTitle" data-text="Contact()">Contact()</h2>
+</div>
+<div class="contact-container">
+<div class="contact-terminal">
+<div class="terminal-header"><div class="terminal-dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div><span class="terminal-title"><iconify-icon icon="solar:chat-round-call-bold"></iconify-icon> ~/contact - send_message</span></div>
+<div class="terminal-body contact-form-body">
+<form class="cli-form" id="contact-form">
+<div class="form-line"><span class="prompt"><iconify-icon icon="solar:user-rounded-bold"></iconify-icon></span><input class="cli-input" data-i18n-placeholder="form.namePlaceholder" id="name" placeholder="Enter your name..." required="" type="text"/></div>
+<div class="form-line"><span class="prompt"><iconify-icon icon="solar:letter-bold"></iconify-icon></span><input class="cli-input" data-i18n-placeholder="form.emailPlaceholder" id="email" placeholder="Enter your email..." required="" type="email"/></div>
+<div class="form-line"><span class="prompt"><iconify-icon icon="solar:document-text-bold"></iconify-icon></span><input class="cli-input" data-i18n-placeholder="form.subjectPlaceholder" id="subject" placeholder="Enter subject..." required="" type="text"/></div>
+<div class="form-line"><span class="prompt"><iconify-icon icon="solar:pen-new-square-bold"></iconify-icon></span><textarea class="cli-input cli-textarea" data-i18n-placeholder="form.messagePlaceholder" id="message" placeholder="Type your message..." required=""></textarea></div>
+<div class="form-line"><button class="submit-btn" type="submit"><iconify-icon icon="solar:plain-2-bold"></iconify-icon><span data-i18n="form.send"> send_message → WhatsApp</span></button></div>
+<div class="form-response" id="form-response"></div>
+</form>
+</div>
+</div>
+<div class="contact-info">
+<a aria-label="Peter Elia LinkedIn profile" class="linkedin-card" href="https://www.linkedin.com/in/peter-elea-71689935a/" rel="noopener noreferrer" target="_blank">
+<span class="linkedin-card-icon interactive-icon"><iconify-icon icon="mdi:linkedin"></iconify-icon></span>
+<span class="linkedin-card-content">
+<span class="linkedin-card-label" data-i18n="contact.linkedinLabel">LinkedIn Profile</span>
+<strong data-i18n="contact.name">Peter Elia Nasseem Fanous</strong>
+<small data-i18n="contact.brand">PeterElia.dev</small>
+</span>
+<iconify-icon class="linkedin-card-arrow" icon="solar:arrow-right-up-bold"></iconify-icon>
+</a>
+<div class="info-block"><pre><code id="contact-code"><span class="keyword">const</span> <span class="variable">links</span> = {
   <span class="property">name</span>: <span class="string">"Peter Elia Nasseem Fanous"</span>,
   <span class="property">brand</span>: <span class="string">"PeterElia.dev"</span>,
   <span class="property">github</span>: <span class="string">"github.com/beterelea020-alt"</span>,
   <span class="property">linkedin</span>: <span class="string">"linkedin.com/in/peter-elea-71689935a"</span>,
   <span class="property">email</span>: <span class="string">"beterelea020@gmail.com"</span>
 };</code></pre></div>
-        <div class="social-links">
-          <a href="https://github.com/beterelea020-alt" target="_blank" rel="noopener noreferrer" class="social-link" data-tooltip="GitHub" aria-label="GitHub"><iconify-icon icon="mdi:github"></iconify-icon></a>
-          <a href="https://www.linkedin.com/in/peter-elea-71689935a/" target="_blank" rel="noopener noreferrer" class="social-link" data-tooltip="LinkedIn" aria-label="LinkedIn"><iconify-icon icon="mdi:linkedin"></iconify-icon></a>
-          <a href="mailto:beterelea020@gmail.com" class="social-link" data-tooltip="Email" aria-label="Email"><iconify-icon icon="solar:letter-bold"></iconify-icon></a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="footer-content">
-      <span class="footer-code"><iconify-icon icon="solar:shield-check-bold"></iconify-icon> All rights reserved</span>
-      <span class="footer-year">&copy; 2026 | <span class="neon-text">Peter Elia Nasseem Fanous</span></span>
-    </div>
-  </footer>
-  </main>
-
-  <div class="custom-cursor"></div>
-  <div class="cursor-follower"></div>
-  <script src="script.js"></script>
-
+<div class="social-links">
+<a aria-label="GitHub" class="social-link" data-tooltip="GitHub" href="https://github.com/beterelea020-alt" rel="noopener noreferrer" target="_blank"><iconify-icon icon="mdi:github"></iconify-icon></a>
+<a aria-label="LinkedIn" class="social-link" data-tooltip="LinkedIn" href="https://www.linkedin.com/in/peter-elea-71689935a/" rel="noopener noreferrer" target="_blank"><iconify-icon icon="mdi:linkedin"></iconify-icon></a>
+<a aria-label="Email" class="social-link" data-tooltip="Email" href="mailto:beterelea020@gmail.com"><iconify-icon icon="solar:letter-bold"></iconify-icon></a>
+</div>
+</div>
+</div>
+</section>
+<footer class="footer">
+<div class="footer-content">
+<span class="footer-code" data-i18n="footer.rights"><iconify-icon icon="solar:shield-check-bold"></iconify-icon> All rights reserved</span>
+<span class="footer-year">© 2026 | <span class="neon-text">Peter Elia Nasseem Fanous</span></span>
+</div>
+</footer>
+</main>
+<nav aria-label="Quick navigation" class="bottom-nav" id="bottom-nav">
+<a class="bottom-link active" href="#hero"><iconify-icon icon="solar:home-2-bold"></iconify-icon><span data-i18n="nav.home">home</span></a>
+<a class="bottom-link" href="#about"><iconify-icon icon="solar:user-rounded-bold"></iconify-icon><span data-i18n="nav.about">about</span></a>
+<a class="bottom-link" href="#skills"><iconify-icon icon="solar:cpu-bold"></iconify-icon><span data-i18n="nav.skills">skills</span></a>
+<a class="bottom-link" href="#projects"><iconify-icon icon="solar:case-round-bold"></iconify-icon><span data-i18n="nav.projects">projects</span></a>
+<a class="bottom-link" href="#contact"><iconify-icon icon="solar:chat-round-dots-bold"></iconify-icon><span data-i18n="nav.contact">contact</span></a>
+</nav>
+<div class="custom-cursor"></div>
+<div class="cursor-follower"></div>
+<a aria-label="Contact Peter on WhatsApp" class="floating-whatsapp" href="https://wa.me/201550870190?text=Hello%20Peter%2C%20I%20found%20your%20portfolio%20and%20I%27d%20like%20to%20discuss%20a%20project." rel="noopener noreferrer" target="_blank"><iconify-icon icon="logos:whatsapp-icon"></iconify-icon><span data-i18n="floating.whatsapp">WhatsApp</span></a><div aria-hidden="true" class="project-modal" id="project-modal">
+<div class="modal-backdrop" data-close-modal=""></div>
+<div aria-labelledby="modal-title" aria-modal="true" class="modal-dialog" role="dialog">
+<button aria-label="Close" class="modal-close" data-close-modal="" type="button"><iconify-icon icon="solar:close-circle-bold"></iconify-icon></button>
+<div class="modal-image">
+<div class="portfolio-browser modal-browser">
+<div class="portfolio-browser-bar"><span class="portfolio-browser-dots"><i class="dot red"></i><i class="dot yellow"></i><i class="dot green"></i></span><span class="portfolio-browser-url" id="modal-url">project preview</span></div>
+<div class="portfolio-browser-screen"><img alt="" id="modal-image" src=""/></div>
+</div>
+</div>
+<div class="modal-content">
+<span class="project-category" id="modal-category"></span>
+<h2 id="modal-title"></h2>
+<p id="modal-description"></p>
+<div class="modal-tags" id="modal-tags"></div>
+<div class="modal-details">
+<div><small data-i18n="modal.overviewLabel">Overview</small><strong id="modal-overview"></strong></div>
+<div><small data-i18n="modal.stackLabel">Stack</small><strong id="modal-stack"></strong></div>
+<div><small data-i18n="modal.statusLabel">Status</small><strong id="modal-status"></strong></div>
+</div>
+<div class="modal-actions" id="modal-actions"></div>
+</div>
+</div>
+</div><script src="script.js"></script>
 </body>
 </html>

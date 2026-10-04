@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 680" role="img" aria-label="DIGITAL LIBRARY project preview">
+      <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#13251f"/><stop offset="1" stop-color="#0a0e13"/></linearGradient></defs>
+      <rect width="1000" height="680" fill="url(#g)"/>
+      <rect x="44" y="36" width="912" height="608" rx="26" fill="#0a0f14" stroke="#25303c" stroke-width="2"/>
+      <rect x="44" y="36" width="912" height="48" rx="26" fill="#121922"/><rect x="44" y="61" width="912" height="23" fill="#121922"/>
+      <circle cx="71" cy="60" r="7" fill="#ef6b6b"/><circle cx="93" cy="60" r="7" fill="#e3b94b"/><circle cx="115" cy="60" r="7" fill="#5dc47c"/>
+      <rect x="160" y="48" width="610" height="24" rx="12" fill="#0c1218"/><text x="182" y="65" fill="#6f7f90" font-size="12" font-family="Arial">app-preview / digital-library</text>
+      <rect x="76" y="116" width="848" height="500" rx="18" fill="#13251f"/>
+        <text x="112" y="160" fill="#79bfa4" font-size="15" font-weight="700" font-family="Arial">SAFAR AL-MAZAMEER</text><text x="112" y="194" fill="#eef3f8" font-size="28" font-weight="700" font-family="Arial">Continue your journey.</text>
+        <rect x="112" y="228" width="520" height="170" rx="18" fill="#141b24"/><text x="138" y="263" fill="#8090a2" font-size="12" font-family="Arial">CURRENT REVIEW</text><text x="138" y="307" fill="#eef3f8" font-size="22" font-weight="700" font-family="Arial">Psalm 23</text><rect x="138" y="333" width="330" height="8" rx="4" fill="#384758"/><rect x="138" y="333" width="210" height="8" rx="4" fill="#79bfa4"/><circle cx="548" cy="304" r="34" fill="#79bfa4" opacity=".14" stroke="#79bfa4"/><polygon points="540,291 540,317 561,304" fill="#79bfa4"/>
+        <rect x="112" y="418" width="247" height="132" rx="17" fill="#1a222d"/><text x="136" y="451" fill="#8090a2" font-size="12" font-family="Arial">READING STREAK</text><text x="136" y="492" fill="#eef3f8" font-size="29" font-weight="700" font-family="Arial">12 days</text><rect x="136" y="517" width="190" height="7" rx="3.5" fill="#334353"/><rect x="136" y="517" width="149" height="7" rx="3.5" fill="#79bfa4"/>
+        <rect x="378" y="418" width="254" height="132" rx="17" fill="#1a222d"/><text x="402" y="451" fill="#8090a2" font-size="12" font-family="Arial">LIBRARY</text><rect x="402" y="474" width="196" height="10" rx="5" fill="#485769"/><rect x="402" y="499" width="152" height="9" rx="4.5" fill="#344352"/><rect x="657" y="228" width="227" height="322" rx="18" fill="#141b24"/><text x="681" y="264" fill="#8090a2" font-size="12" font-family="Arial">DAILY PLAN</text>
+      <rect x="801" y="48" width="110" height="24" rx="12" fill="#79bfa4" opacity=".12"/><text x="856" y="65" text-anchor="middle" fill="#79bfa4" font-size="11" font-weight="700" font-family="Arial">DIGITAL LIBRARY</text>
+    </svg>

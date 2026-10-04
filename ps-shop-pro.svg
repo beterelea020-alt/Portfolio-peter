@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 680" role="img" aria-label="POS SYSTEM project preview">
+      <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#101f31"/><stop offset="1" stop-color="#0a0e13"/></linearGradient></defs>
+      <rect width="1000" height="680" fill="url(#g)"/>
+      <rect x="44" y="36" width="912" height="608" rx="26" fill="#0a0f14" stroke="#25303c" stroke-width="2"/>
+      <rect x="44" y="36" width="912" height="48" rx="26" fill="#121922"/><rect x="44" y="61" width="912" height="23" fill="#121922"/>
+      <circle cx="71" cy="60" r="7" fill="#ef6b6b"/><circle cx="93" cy="60" r="7" fill="#e3b94b"/><circle cx="115" cy="60" r="7" fill="#5dc47c"/>
+      <rect x="160" y="48" width="610" height="24" rx="12" fill="#0c1218"/><text x="182" y="65" fill="#6f7f90" font-size="12" font-family="Arial">app-preview / pos-system</text>
+      <rect x="76" y="116" width="848" height="500" rx="18" fill="#101f31"/><rect x="96" y="136" width="155" height="460" rx="14" fill="#0c1722"/><rect x="114" y="160" width="119" height="32" rx="9" fill="#55b4ff"/><text x="173" y="181" text-anchor="middle" fill="#07131e" font-size="13" font-weight="700" font-family="Arial">PS SHOP PRO</text><rect x="114" y="220" width="119" height="11" rx="5.5" fill="#2a4255"/><rect x="114" y="247" width="92" height="9" rx="4.5" fill="#253847"/><rect x="114" y="274" width="105" height="9" rx="4.5" fill="#253847"/>
+        <text x="277" y="168" fill="#eef3f8" font-size="23" font-weight="700" font-family="Arial">Café Overview</text><text x="277" y="192" fill="#8090a2" font-size="12" font-family="Arial">Today · 30 tables</text>
+        <rect x="277" y="220" width="185" height="110" rx="16" fill="#141b24"/><text x="299" y="252" fill="#8090a2" font-size="11" font-family="Arial">ACTIVE SESSIONS</text><text x="299" y="292" fill="#eef3f8" font-size="30" font-weight="700" font-family="Arial">18</text>
+        <rect x="478" y="220" width="185" height="110" rx="16" fill="#141b24"/><text x="500" y="252" fill="#8090a2" font-size="11" font-family="Arial">TODAY SALES</text><text x="500" y="292" fill="#55b4ff" font-size="25" font-weight="700" font-family="Arial">12,840</text>
+        <rect x="679" y="220" width="205" height="110" rx="16" fill="#141b24"/><text x="701" y="252" fill="#8090a2" font-size="11" font-family="Arial">AVAILABLE</text><text x="701" y="292" fill="#eef3f8" font-size="25" font-weight="700" font-family="Arial">12 / 30</text>
+        <rect x="277" y="350" width="607" height="246" rx="16" fill="#1a222d"/><text x="300" y="380" fill="#8090a2" font-size="11" font-family="Arial">SESSION FLOW</text>
+      <rect x="801" y="48" width="110" height="24" rx="12" fill="#55b4ff" opacity=".12"/><text x="856" y="65" text-anchor="middle" fill="#55b4ff" font-size="11" font-weight="700" font-family="Arial">POS SYSTEM</text>
+    </svg>
