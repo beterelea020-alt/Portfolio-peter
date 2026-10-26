@@ -204,3 +204,228 @@ cards.forEach(c=>revealObserver.observe(c));
 
 // Apply current language/theme after all DOM mutations.
 applyLanguage();
+
+// ===== PeterElia.dev — premium intro, scroll reveal, and tactile 3D motion =====
+// Kept inside script.js so no HTML/CSS file needs to be replaced.
+(function initPeterPremiumMotion() {
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  const premiumStyles = document.createElement('style');
+  premiumStyles.id = 'peter-premium-motion-styles';
+  premiumStyles.textContent = `
+    /* Refresh intro: reuses this portfolio's existing neon palette. */
+    .pe-intro {
+      position: fixed; inset: 0; z-index: 20000; display: grid; place-items: center;
+      overflow: hidden; isolation: isolate; color: var(--text-primary, #c9d1d9);
+      background: var(--bg-primary, #0a0a0a); opacity: 1; visibility: visible;
+      transition: opacity .58s ease, visibility .58s ease;
+    }
+    .pe-intro::before {
+      content: ""; position: absolute; inset: -25%; z-index: -1; pointer-events: none;
+      background: radial-gradient(circle at 50% 48%, rgba(0,255,65,.12), transparent 29%),
+                  radial-gradient(circle at 52% 50%, rgba(0,212,255,.09), transparent 47%);
+      animation: pe-intro-breathe 2.4s ease-in-out infinite alternate;
+    }
+    .pe-intro-circle {
+      position: relative; display: grid; place-content: center; justify-items: center;
+      width: min(72vw, 280px); aspect-ratio: 1; border-radius: 50%; text-align: center;
+      border: 1px solid rgba(0,255,65,.36);
+      background: radial-gradient(circle at 35% 24%, rgba(0,212,255,.10), rgba(13,17,23,.92) 65%);
+      box-shadow: 0 0 26px rgba(0,255,65,.12), inset 0 0 34px rgba(0,212,255,.07);
+      animation: pe-intro-arrive .82s cubic-bezier(.2,.8,.2,1) both;
+    }
+    .pe-intro-circle::before, .pe-intro-circle::after {
+      content: ""; position: absolute; inset: -9px; border-radius: inherit; pointer-events: none;
+    }
+    .pe-intro-circle::before {
+      border: 2px solid transparent;
+      border-top-color: var(--neon-green, #00ff41); border-right-color: var(--neon-blue, #00d4ff);
+      filter: drop-shadow(0 0 7px rgba(0,255,65,.38));
+      animation: pe-intro-spin 1.65s linear infinite;
+    }
+    .pe-intro-circle::after {
+      inset: -18px; border: 1px dashed rgba(189,0,255,.38);
+      animation: pe-intro-spin 8s linear infinite reverse;
+    }
+    .pe-intro-kicker {
+      font: 700 .72rem/1.2 ui-monospace, SFMono-Regular, Menlo, monospace;
+      letter-spacing: .26em; color: var(--neon-blue, #00d4ff); text-transform: uppercase;
+      margin-bottom: 9px; text-shadow: 0 0 16px rgba(0,212,255,.3);
+    }
+    .pe-intro-name {
+      font: 900 clamp(2.15rem, 10vw, 3.2rem)/.95 Tajawal, sans-serif;
+      letter-spacing: .03em; color: var(--neon-green, #00ff41);
+      text-shadow: 0 0 12px rgba(0,255,65,.35), 0 0 32px rgba(0,255,65,.12);
+    }
+    .pe-intro-domain {
+      margin-top: 11px; font: 600 .68rem/1.2 ui-monospace, SFMono-Regular, Menlo, monospace;
+      letter-spacing: .2em; color: var(--text-secondary, #8b949e);
+    }
+    .pe-intro-progress {
+      position: absolute; bottom: 25%; left: 25%; right: 25%; height: 2px; overflow: hidden;
+      border-radius: 999px; background: rgba(139,148,158,.17);
+    }
+    .pe-intro-progress::after {
+      content: ""; display: block; height: 100%; width: 100%; transform: scaleX(0);
+      transform-origin: left; border-radius: inherit;
+      background: linear-gradient(90deg, var(--neon-green, #00ff41), var(--neon-blue, #00d4ff), var(--neon-purple, #bd00ff));
+      animation: pe-intro-progress 1.38s cubic-bezier(.65,0,.35,1) forwards;
+    }
+    .pe-intro.pe-intro-out { opacity: 0; visibility: hidden; pointer-events: none; }
+    .pe-intro.pe-intro-out .pe-intro-circle { animation: pe-intro-exit .48s ease forwards; }
+
+    /* Scroll reveal for the main content. */
+    .pe-reveal {
+      opacity: 0; transform: translate3d(0, 25px, 0); filter: blur(3px);
+      transition: opacity .68s ease, transform .68s cubic-bezier(.2,.7,.2,1), filter .68s ease;
+      transition-delay: var(--pe-reveal-delay, 0ms);
+    }
+    .pe-reveal.pe-revealed { opacity: 1; transform: translate3d(0,0,0); filter: blur(0); }
+
+    /* Gentle perspective follows the mouse, or the finger while touching a card. */
+    .pe-tilt-target {
+      transform-style: preserve-3d; backface-visibility: hidden; touch-action: pan-y;
+      transition: transform .36s cubic-bezier(.2,.7,.2,1), box-shadow .3s ease, border-color .3s ease;
+      will-change: transform;
+    }
+    .pe-tilt-target.pe-tilting { transition: transform .075s linear, box-shadow .2s ease, border-color .2s ease; }
+    .pe-tilt-target.pe-tilting { border-color: var(--neon-blue, #00d4ff); }
+    .stat-number.pe-count-complete { display: inline-block; animation: pe-number-finish .62s cubic-bezier(.2,.8,.2,1) both; }
+
+    @keyframes pe-intro-spin { to { transform: rotate(360deg); } }
+    @keyframes pe-intro-progress { to { transform: scaleX(1); } }
+    @keyframes pe-intro-breathe { from { opacity: .55; transform: scale(.94); } to { opacity: 1; transform: scale(1.06); } }
+    @keyframes pe-intro-arrive { from { opacity: 0; transform: scale(.72) rotate(-8deg); } to { opacity: 1; transform: scale(1) rotate(0); } }
+    @keyframes pe-intro-exit { to { opacity: 0; transform: scale(1.12) rotate(4deg); filter: blur(5px); } }
+    @keyframes pe-number-finish { 0% { transform: scale(1); } 45% { transform: scale(1.17); text-shadow: 0 0 18px var(--neon-green, #00ff41); } 100% { transform: scale(1); } }
+
+    @media (max-width: 768px) {
+      .pe-intro-circle { width: min(65vw, 250px); }
+      .pe-tilt-target.pe-tilting { border-color: var(--neon-green, #00ff41); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .pe-intro::before, .pe-intro-circle, .pe-intro-circle::before, .pe-intro-circle::after,
+      .pe-intro-progress::after, .pe-intro.pe-intro-out .pe-intro-circle,
+      .stat-number.pe-count-complete { animation: none !important; }
+      .pe-reveal { opacity: 1 !important; transform: none !important; filter: none !important; transition: none !important; }
+      .pe-tilt-target, .pe-tilt-target.pe-tilting { transform: none !important; transition: none !important; }
+    }
+  `;
+  document.head.appendChild(premiumStyles);
+
+  // The intro is intentionally generated here so existing index.html stays unchanged.
+  const intro = document.createElement('div');
+  intro.className = 'pe-intro';
+  intro.setAttribute('role', 'status');
+  intro.setAttribute('aria-label', 'Portfolio Peter');
+  intro.setAttribute('aria-live', 'polite');
+  intro.innerHTML = `
+    <div class="pe-intro-circle" aria-hidden="true">
+      <span class="pe-intro-kicker">PORTFOLIO</span>
+      <strong class="pe-intro-name">PETER</strong>
+      <span class="pe-intro-domain">ELIA.DEV</span>
+      <span class="pe-intro-progress"></span>
+    </div>`;
+  document.body.appendChild(intro);
+  document.body.classList.add('pe-intro-lock');
+  document.body.style.overflow = 'hidden';
+  const introDelay = reducedMotion ? 420 : 1480;
+  window.setTimeout(() => {
+    intro.classList.add('pe-intro-out');
+    window.setTimeout(() => {
+      intro.remove();
+      document.body.classList.remove('pe-intro-lock');
+      document.body.style.overflow = '';
+    }, 620);
+  }, introDelay);
+
+  // Reveal selected blocks as they enter the viewport, with a subtle stagger.
+  const revealTargets = document.querySelectorAll(
+    '.section-header, .stat-card, .skill-category, .project-card, .linkedin-card, .contact-terminal, .info-block'
+  );
+  if (reducedMotion || !('IntersectionObserver' in window)) {
+    revealTargets.forEach(el => el.classList.add('pe-revealed'));
+  } else {
+    const revealObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('pe-revealed');
+        revealObserver.unobserve(entry.target);
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -3% 0px' });
+
+    revealTargets.forEach((el, index) => {
+      el.classList.add('pe-reveal');
+      el.style.setProperty('--pe-reveal-delay', `${(index % 5) * 65}ms`);
+      revealObserver.observe(el);
+    });
+  }
+
+  // 3D tilt supports both mouse movement and touch dragging without hijacking scroll.
+  if (!reducedMotion) {
+    const tiltTargets = document.querySelectorAll(
+      '#hero-visual, .stat-card, .skill-category, .project-card, .linkedin-card, .terminal-window, .contact-terminal, .info-block'
+    );
+    tiltTargets.forEach(el => {
+      el.classList.add('pe-tilt-target');
+      let touchIsDown = false;
+      let resetTimer = null;
+
+      const resetTilt = () => {
+        touchIsDown = false;
+        el.classList.remove('pe-tilting');
+        el.style.removeProperty('transform');
+        el.style.removeProperty('box-shadow');
+      };
+
+      el.addEventListener('pointerdown', event => {
+        if (event.pointerType === 'touch') touchIsDown = true;
+        if (resetTimer) window.clearTimeout(resetTimer);
+      }, { passive: true });
+
+      el.addEventListener('pointermove', event => {
+        if (event.pointerType === 'touch' && !touchIsDown) return;
+        if (event.pointerType === 'mouse' && !window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+
+        const rect = el.getBoundingClientRect();
+        if (!rect.width || !rect.height) return;
+        const x = Math.max(0, Math.min(1, (event.clientX - rect.left) / rect.width));
+        const y = Math.max(0, Math.min(1, (event.clientY - rect.top) / rect.height));
+        const strength = event.pointerType === 'touch' ? 5 : 8;
+        const rotateY = (x - .5) * strength * 2;
+        const rotateX = (.5 - y) * strength * 1.5;
+        const scale = event.pointerType === 'touch' ? 1.006 : 1.012;
+
+        el.classList.add('pe-tilting');
+        el.style.transform = `perspective(1100px) rotateX(${rotateX.toFixed(2)}deg) rotateY(${rotateY.toFixed(2)}deg) translateZ(0) scale(${scale})`;
+        if (event.pointerType === 'mouse') {
+          el.style.boxShadow = '0 18px 46px rgba(0, 212, 255, .12), 0 0 24px rgba(0, 255, 65, .06)';
+        }
+      }, { passive: true });
+
+      el.addEventListener('pointerup', () => {
+        if (!touchIsDown) return;
+        resetTimer = window.setTimeout(resetTilt, 260);
+      }, { passive: true });
+      el.addEventListener('pointercancel', resetTilt, { passive: true });
+      el.addEventListener('pointerleave', resetTilt, { passive: true });
+      el.addEventListener('blur', resetTilt, { passive: true });
+    });
+  }
+
+  // Give each existing count-up number a small finish pulse once it reaches its target.
+  const completedCounters = new WeakSet();
+  const counterWatcher = new MutationObserver(mutations => {
+    mutations.forEach(mutation => {
+      const el = mutation.target;
+      if (!el.matches?.('.stat-number') || completedCounters.has(el)) return;
+      const target = Number.parseInt(el.dataset.target || '0', 10) || 0;
+      const current = Number.parseInt(el.textContent || '0', 10) || 0;
+      if (current >= target) {
+        completedCounters.add(el);
+        el.classList.add('pe-count-complete');
+      }
+    });
+  });
+  document.querySelectorAll('.stat-number').forEach(el => counterWatcher.observe(el, { childList: true, characterData: true, subtree: true }));
+})();
