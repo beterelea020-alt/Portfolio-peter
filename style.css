@@ -1234,3 +1234,19 @@ html[dir="rtl"] .sidebar-controls { direction:rtl; }
 html[dir="rtl"] .sidebar-link .sidebar-icon { transform:scaleX(-1); }
 html[dir="rtl"] .project-preview::after { right:auto; left:24px; }
 @media (max-width:768px){ html[dir="rtl"] .project-preview::after { right:auto; left:16px; } }
+
+
+/* ===== Touch & Pointer Interactive Glow Canvas ===== */
+#touch-glow-canvas {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 9998;
+  mix-blend-mode: screen;
+}
+html[data-theme="light"] #touch-glow-canvas {
+  mix-blend-mode: multiply;
+  opacity: 0.82;
+}
