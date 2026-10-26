@@ -72,15 +72,15 @@ const dict={
 const projects={
  'fakkerny':{title:'فَكّرني | Fakkerny',desc:{en:'Personal organizer for reminders, medication, money and habits, with offline-first use and optional cloud sync.',ar:'مساعد شخصي لتنظيم التذكيرات والأدوية والفلوس والعادات، مع إمكانية الاستخدام أوفلاين والمزامنة السحابية الاختيارية.'},overview:{en:'A practical personal productivity PWA that keeps everyday reminders and routines in one place, with optional account-based sync.',ar:'تطبيق إنتاجية شخصي يجمع التذكيرات والروتين اليومي في مكان واحد، مع مزامنة اختيارية عند تسجيل الدخول.'},stack:'PWA · JavaScript · Turso',cat:{en:'App',ar:'تطبيق'},status:{en:'Live',ar:'مباشر'},image:'assets/fakkerny-project.webp',live:'https://fakkerny-com.vercel.app/',code:'https://github.com/beterelea020-alt/fakkerny.com'},
  'eh-ya-am':{title:'إيه يا عم؟ | EH YA AM',desc:{en:'Egyptian Arabic party quiz with questions and challenges for two teams, designed to run from one host phone without accounts.',ar:'لعبة أسئلة وتحديات باللهجة المصرية لفريقين، مصممة للعب من موبايل المضيف من غير حسابات.'},overview:{en:'A mobile-first group game for trips and gatherings, with quiz categories, challenges and simple host-controlled scoring.',ar:'لعبة جماعية Mobile-first للرحلات واللمّات، فيها فئات أسئلة وتحديات ونظام نقاط بسيط يتحكم فيه المضيف.'},stack:'JavaScript · Mobile-first · Party Game',cat:{en:'App',ar:'لعبة جماعية'},status:{en:'Live',ar:'مباشر'},image:'assets/eh-ya-am-project.webp',live:'https://eh-ya-amcom.vercel.app/',code:'https://github.com/beterelea020-alt/eh-ya-am.com'},
- 'watch-store':{title:'RAW Watches',desc:{en:'Watch store with product discovery, specifications, cart, checkout, customer accounts and an admin dashboard.',ar:'متجر ساعات مع اكتشاف المنتجات والمواصفات والسلة والـCheckout وحسابات العملاء ولوحة تحكم.'},overview:{en:'A complete e-commerce experience focused on product discovery, checkout and store management.',ar:'تجربة متجر إلكتروني متكاملة تركز على اكتشاف المنتج والطلب وإدارة المتجر.'},stack:'JavaScript · Supabase · Admin',cat:{en:'Store',ar:'متجر'},status:{en:'Live',ar:'مباشر'},image:'watch-store.svg',live:'https://watch-store-delta-red.vercel.app/',code:'https://github.com/beterelea020-alt/watch-store'},
- 'coffee-store':{title:'RAW Coffee House',desc:{en:'Arabic RTL coffee store with product options, live cart, governorate checkout and WhatsApp-ready orders.',ar:'متجر قهوة عربي RTL بخيارات المنتجات وسلة مباشرة وCheckout للمحافظات وطلبات جاهزة على واتساب.'},overview:{en:'A practical RTL storefront designed around fast product selection and ordering.',ar:'واجهة متجر RTL عملية ومبنية حول اختيار المنتج والطلب بسرعة.'},stack:'JavaScript · RTL · WhatsApp',cat:{en:'Store',ar:'متجر'},status:{en:'Live',ar:'مباشر'},image:'coffee-store.svg',live:'https://coffee-store-zeta-nine.vercel.app/',code:'https://github.com/beterelea020-alt/coffee-store'},
- 'safar-psalms':{title:'Safar Al-Mazameer',desc:{en:'Digital Psalms library for reading, listening, memorizing and review, with offline progress on the device.',ar:'مكتبة رقمية للمزامير للقراءة والاستماع والحفظ والمراجعة مع حفظ التقدم والعمل بدون اتصال.'},overview:{en:'A quiet, focused reading experience designed to keep the core content available offline.',ar:'تجربة قراءة هادئة ومركزة مع إبقاء المحتوى الأساسي متاحًا بدون إنترنت.'},stack:'PWA · Offline · JavaScript',cat:{en:'App',ar:'تطبيق'},status:{en:'Live',ar:'مباشر'},image:'safar-psalms.svg',live:'https://safar-psalms.vercel.app/',code:'https://github.com/beterelea020-alt/safar-psalms'},
- 'maljaeii':{title:'Maljaei',desc:{en:'Daily personal app with streaks, checklists, mood-based messages, favorites and reminders.',ar:'تطبيق يومي شخصي فيه Streaks وChecklists ورسائل حسب الحالة والمفضلة والتذكيرات.'},overview:{en:'A personal daily experience built around routines, saved progress and lightweight interactions.',ar:'تجربة يومية شخصية مبنية حول الروتين والتقدم المحفوظ والتفاعل الخفيف.'},stack:'PWA · localStorage · Admin Panel',cat:{en:'App',ar:'تطبيق'},status:{en:'Live',ar:'مباشر'},image:'maljaeii.svg',live:'https://maljaeii.vercel.app/',code:'https://github.com/beterelea020-alt/Maljaei'},
- 'george-maria-love':{title:'George & Maria',desc:{en:'A shareable digital invitation designed mobile-first and built to look good on every screen.',ar:'دعوة رقمية في رابط واحد، مصممة Mobile-first وتظهر بشكل جيد على كل الشاشات.'},overview:{en:'A focused single-link experience built around a strong mobile presentation.',ar:'تجربة مركزة في رابط واحد مع تركيز قوي على عرض الموبايل.'},stack:'HTML/CSS · JavaScript · Responsive',cat:{en:'App',ar:'تطبيق'},status:{en:'Live',ar:'مباشر'},image:'george-maria-love.svg',live:'https://george-maria-love.vercel.app/',code:'https://github.com/beterelea020-alt/george-maria-love'},
- 'ps-shop-pro':{title:'PS Shop Pro',desc:{en:'PlayStation cafe management desktop app for timed sessions, licensing and sales.',ar:'نظام Desktop لإدارة كافيه PlayStation للجلسات المؤقتة والتراخيص والمبيعات.'},overview:{en:'Desktop workflow designed around the day-to-day operation of a PlayStation cafe.',ar:'Workflow مكتبي مبني حول التشغيل اليومي لكافيه PlayStation.'},stack:'JavaScript · Node.js · Windows',cat:{en:'System',ar:'نظام'},status:{en:'Desktop',ar:'Desktop'},image:'ps-shop-pro.svg',code:'https://github.com/beterelea020-alt'},
- 'supplements-pos':{title:'Supplements POS',desc:{en:'Retail POS with inventory, invoices and reporting for product sales.',ar:'نظام POS للمبيعات مع المخزون والفواتير والتقارير لسيناريو Retail.'},overview:{en:'A retail-oriented POS workflow connecting sales, inventory and reports.',ar:'Workflow لنظام POS يربط المبيعات بالمخزون والتقارير.'},stack:'React · Node.js · MongoDB',cat:{en:'System',ar:'نظام'},status:{en:'Portfolio',ar:'بورتفوليو'},image:'supplements-pos.svg',code:'https://github.com/beterelea020-alt'},
- 'gym-system':{title:'Gym System',desc:{en:'Gym management system for memberships, subscriptions, check-ins and daily operations.',ar:'نظام إدارة جيم للعضويات والاشتراكات والدخول والتشغيل اليومي.'},overview:{en:'A management workflow centered on memberships, subscriptions and front-desk operations.',ar:'نظام إدارة يتمحور حول العضويات والاشتراكات وتشغيل الاستقبال.'},stack:'Node.js · Express · MongoDB',cat:{en:'System',ar:'نظام'},status:{en:'Portfolio',ar:'بورتفوليو'},image:'gym-system.svg',code:'https://github.com/beterelea020-alt'},
- 'coachpro':{title:'CoachPro',desc:{en:'Coaching platform with separate admin, coach and client views.',ar:'منصة Coaching بواجهات منفصلة للإدارة والمدرب والعميل.'},overview:{en:'A role-based coaching platform with separate workflows for each user type.',ar:'منصة Coaching بصلاحيات وتدفقات عمل مختلفة لكل نوع مستخدم.'},stack:'React · Node.js · Auth',cat:{en:'System',ar:'نظام'},status:{en:'Portfolio',ar:'بورتفوليو'},image:'coachpro.svg',code:'https://github.com/beterelea020-alt'}
+ 'watch-store':{title:'RAW Watches',desc:{en:'Watch store with product discovery, specifications, cart, checkout, customer accounts and an admin dashboard.',ar:'متجر ساعات مع اكتشاف المنتجات والمواصفات والسلة والـCheckout وحسابات العملاء ولوحة تحكم.'},overview:{en:'A complete e-commerce experience focused on product discovery, checkout and store management.',ar:'تجربة متجر إلكتروني متكاملة تركز على اكتشاف المنتج والطلب وإدارة المتجر.'},stack:'JavaScript · Supabase · Admin',cat:{en:'Store',ar:'متجر'},status:{en:'Live',ar:'مباشر'},image:'assets/watch-store-project.webp',live:'https://watch-store-delta-red.vercel.app/',code:'https://github.com/beterelea020-alt/watch-store'},
+ 'coffee-store':{title:'RAW Coffee House',desc:{en:'Arabic RTL coffee store with product options, live cart, governorate checkout and WhatsApp-ready orders.',ar:'متجر قهوة عربي RTL بخيارات المنتجات وسلة مباشرة وCheckout للمحافظات وطلبات جاهزة على واتساب.'},overview:{en:'A practical RTL storefront designed around fast product selection and ordering.',ar:'واجهة متجر RTL عملية ومبنية حول اختيار المنتج والطلب بسرعة.'},stack:'JavaScript · RTL · WhatsApp',cat:{en:'Store',ar:'متجر'},status:{en:'Live',ar:'مباشر'},image:'assets/coffee-store-project.webp',live:'https://coffee-store-zeta-nine.vercel.app/',code:'https://github.com/beterelea020-alt/coffee-store'},
+ 'safar-psalms':{title:'Safar Al-Mazameer',desc:{en:'Digital Psalms library for reading, listening, memorizing and review, with offline progress on the device.',ar:'مكتبة رقمية للمزامير للقراءة والاستماع والحفظ والمراجعة مع حفظ التقدم والعمل بدون اتصال.'},overview:{en:'A quiet, focused reading experience designed to keep the core content available offline.',ar:'تجربة قراءة هادئة ومركزة مع إبقاء المحتوى الأساسي متاحًا بدون إنترنت.'},stack:'PWA · Offline · JavaScript',cat:{en:'App',ar:'تطبيق'},status:{en:'Live',ar:'مباشر'},image:'assets/safar-psalms-project.webp',live:'https://safar-psalms.vercel.app/',code:'https://github.com/beterelea020-alt/safar-psalms'},
+ 'maljaeii':{title:'Maljaei',desc:{en:'Daily personal app with streaks, checklists, mood-based messages, favorites and reminders.',ar:'تطبيق يومي شخصي فيه Streaks وChecklists ورسائل حسب الحالة والمفضلة والتذكيرات.'},overview:{en:'A personal daily experience built around routines, saved progress and lightweight interactions.',ar:'تجربة يومية شخصية مبنية حول الروتين والتقدم المحفوظ والتفاعل الخفيف.'},stack:'PWA · localStorage · Admin Panel',cat:{en:'App',ar:'تطبيق'},status:{en:'Live',ar:'مباشر'},image:'assets/maljaeii-project.webp',live:'https://maljaeii.vercel.app/',code:'https://github.com/beterelea020-alt/Maljaei'},
+ 'george-maria-love':{title:'George & Maria',desc:{en:'A shareable digital invitation designed mobile-first and built to look good on every screen.',ar:'دعوة رقمية في رابط واحد، مصممة Mobile-first وتظهر بشكل جيد على كل الشاشات.'},overview:{en:'A focused single-link experience built around a strong mobile presentation.',ar:'تجربة مركزة في رابط واحد مع تركيز قوي على عرض الموبايل.'},stack:'HTML/CSS · JavaScript · Responsive',cat:{en:'App',ar:'تطبيق'},status:{en:'Live',ar:'مباشر'},image:'assets/george-maria-love-project.webp',live:'https://george-maria-love.vercel.app/',code:'https://github.com/beterelea020-alt/george-maria-love'},
+ 'ps-shop-pro':{title:'PS Shop Pro',desc:{en:'PlayStation cafe management desktop app for timed sessions, licensing and sales.',ar:'نظام Desktop لإدارة كافيه PlayStation للجلسات المؤقتة والتراخيص والمبيعات.'},overview:{en:'Desktop workflow designed around the day-to-day operation of a PlayStation cafe.',ar:'Workflow مكتبي مبني حول التشغيل اليومي لكافيه PlayStation.'},stack:'JavaScript · Node.js · Windows',cat:{en:'System',ar:'نظام'},status:{en:'Desktop',ar:'Desktop'},image:'assets/ps-shop-pro-project.webp',code:'https://github.com/beterelea020-alt'},
+ 'supplements-pos':{title:'Supplements POS',desc:{en:'Retail POS with inventory, invoices and reporting for product sales.',ar:'نظام POS للمبيعات مع المخزون والفواتير والتقارير لسيناريو Retail.'},overview:{en:'A retail-oriented POS workflow connecting sales, inventory and reports.',ar:'Workflow لنظام POS يربط المبيعات بالمخزون والتقارير.'},stack:'React · Node.js · MongoDB',cat:{en:'System',ar:'نظام'},status:{en:'Portfolio',ar:'بورتفوليو'},image:'assets/supplements-pos-project.webp',code:'https://github.com/beterelea020-alt'},
+ 'gym-system':{title:'Gym System',desc:{en:'Gym management system for memberships, subscriptions, check-ins and daily operations.',ar:'نظام إدارة جيم للعضويات والاشتراكات والدخول والتشغيل اليومي.'},overview:{en:'A management workflow centered on memberships, subscriptions and front-desk operations.',ar:'نظام إدارة يتمحور حول العضويات والاشتراكات وتشغيل الاستقبال.'},stack:'Node.js · Express · MongoDB',cat:{en:'System',ar:'نظام'},status:{en:'Portfolio',ar:'بورتفوليو'},image:'assets/gym-system-project.webp',code:'https://github.com/beterelea020-alt'},
+ 'coachpro':{title:'CoachPro',desc:{en:'Coaching platform with separate admin, coach and client views.',ar:'منصة Coaching بواجهات منفصلة للإدارة والمدرب والعميل.'},overview:{en:'A role-based coaching platform with separate workflows for each user type.',ar:'منصة Coaching بصلاحيات وتدفقات عمل مختلفة لكل نوع مستخدم.'},stack:'React · Node.js · Auth',cat:{en:'System',ar:'نظام'},status:{en:'Portfolio',ar:'بورتفوليو'},image:'assets/coachpro-project.webp',code:'https://github.com/beterelea020-alt'}
 };
 const projectImages=Object.fromEntries(Object.entries(projects).map(([id,p])=>[id,p.image]));
 
@@ -205,227 +205,179 @@ cards.forEach(c=>revealObserver.observe(c));
 // Apply current language/theme after all DOM mutations.
 applyLanguage();
 
-// ===== PeterElia.dev — premium intro, scroll reveal, and tactile 3D motion =====
-// Kept inside script.js so no HTML/CSS file needs to be replaced.
-(function initPeterPremiumMotion() {
-  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  const premiumStyles = document.createElement('style');
-  premiumStyles.id = 'peter-premium-motion-styles';
-  premiumStyles.textContent = `
-    /* Refresh intro: reuses this portfolio's existing neon palette. */
-    .pe-intro {
-      position: fixed; inset: 0; z-index: 20000; display: grid; place-items: center;
-      overflow: hidden; isolation: isolate; color: var(--text-primary, #c9d1d9);
-      background: var(--bg-primary, #0a0a0a); opacity: 1; visibility: visible;
-      transition: opacity .58s ease, visibility .58s ease;
-    }
-    .pe-intro::before {
-      content: ""; position: absolute; inset: -25%; z-index: -1; pointer-events: none;
-      background: radial-gradient(circle at 50% 48%, rgba(0,255,65,.12), transparent 29%),
-                  radial-gradient(circle at 52% 50%, rgba(0,212,255,.09), transparent 47%);
-      animation: pe-intro-breathe 2.4s ease-in-out infinite alternate;
-    }
-    .pe-intro-circle {
-      position: relative; display: grid; place-content: center; justify-items: center;
-      width: min(72vw, 280px); aspect-ratio: 1; border-radius: 50%; text-align: center;
-      border: 1px solid rgba(0,255,65,.36);
-      background: radial-gradient(circle at 35% 24%, rgba(0,212,255,.10), rgba(13,17,23,.92) 65%);
-      box-shadow: 0 0 26px rgba(0,255,65,.12), inset 0 0 34px rgba(0,212,255,.07);
-      animation: pe-intro-arrive .82s cubic-bezier(.2,.8,.2,1) both;
-    }
-    .pe-intro-circle::before, .pe-intro-circle::after {
-      content: ""; position: absolute; inset: -9px; border-radius: inherit; pointer-events: none;
-    }
-    .pe-intro-circle::before {
-      border: 2px solid transparent;
-      border-top-color: var(--neon-green, #00ff41); border-right-color: var(--neon-blue, #00d4ff);
-      filter: drop-shadow(0 0 7px rgba(0,255,65,.38));
-      animation: pe-intro-spin 1.65s linear infinite;
-    }
-    .pe-intro-circle::after {
-      inset: -18px; border: 1px dashed rgba(189,0,255,.38);
-      animation: pe-intro-spin 8s linear infinite reverse;
-    }
-    .pe-intro-kicker {
-      font: 700 .72rem/1.2 ui-monospace, SFMono-Regular, Menlo, monospace;
-      letter-spacing: .26em; color: var(--neon-blue, #00d4ff); text-transform: uppercase;
-      margin-bottom: 9px; text-shadow: 0 0 16px rgba(0,212,255,.3);
-    }
-    .pe-intro-name {
-      font: 900 clamp(2.15rem, 10vw, 3.2rem)/.95 Tajawal, sans-serif;
-      letter-spacing: .03em; color: var(--neon-green, #00ff41);
-      text-shadow: 0 0 12px rgba(0,255,65,.35), 0 0 32px rgba(0,255,65,.12);
-    }
-    .pe-intro-domain {
-      margin-top: 11px; font: 600 .68rem/1.2 ui-monospace, SFMono-Regular, Menlo, monospace;
-      letter-spacing: .2em; color: var(--text-secondary, #8b949e);
-    }
-    .pe-intro-progress {
-      position: absolute; bottom: 25%; left: 25%; right: 25%; height: 2px; overflow: hidden;
-      border-radius: 999px; background: rgba(139,148,158,.17);
-    }
-    .pe-intro-progress::after {
-      content: ""; display: block; height: 100%; width: 100%; transform: scaleX(0);
-      transform-origin: left; border-radius: inherit;
-      background: linear-gradient(90deg, var(--neon-green, #00ff41), var(--neon-blue, #00d4ff), var(--neon-purple, #bd00ff));
-      animation: pe-intro-progress 1.38s cubic-bezier(.65,0,.35,1) forwards;
-    }
-    .pe-intro.pe-intro-out { opacity: 0; visibility: hidden; pointer-events: none; }
-    .pe-intro.pe-intro-out .pe-intro-circle { animation: pe-intro-exit .48s ease forwards; }
+// ===== Interactive Touch & Pointer Luminous Color Effect (Mobile & Laptop) =====
+(function initTouchPointerGlow() {
+  var canvas = document.getElementById('touch-glow-canvas');
+  if (!canvas) {
+    canvas = document.createElement('canvas');
+    canvas.id = 'touch-glow-canvas';
+    document.body.prepend(canvas);
+  }
+  var ctx = canvas.getContext('2d');
+  if (!ctx) return;
 
-    /* Scroll reveal for the main content. */
-    .pe-reveal {
-      opacity: 0; transform: translate3d(0, 25px, 0); filter: blur(3px);
-      transition: opacity .68s ease, transform .68s cubic-bezier(.2,.7,.2,1), filter .68s ease;
-      transition-delay: var(--pe-reveal-delay, 0ms);
-    }
-    .pe-reveal.pe-revealed { opacity: 1; transform: translate3d(0,0,0); filter: blur(0); }
+  var width = 0, height = 0, dpr = Math.min(window.devicePixelRatio || 1, 2);
+  function resize() {
+    width = window.innerWidth;
+    height = window.innerHeight;
+    canvas.width = Math.floor(width * dpr);
+    canvas.height = Math.floor(height * dpr);
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  }
+  resize();
+  window.addEventListener('resize', resize, { passive: true });
 
-    /* Gentle perspective follows the mouse, or the finger while touching a card. */
-    .pe-tilt-target {
-      transform-style: preserve-3d; backface-visibility: hidden; touch-action: pan-y;
-      transition: transform .36s cubic-bezier(.2,.7,.2,1), box-shadow .3s ease, border-color .3s ease;
-      will-change: transform;
-    }
-    .pe-tilt-target.pe-tilting { transition: transform .075s linear, box-shadow .2s ease, border-color .2s ease; }
-    .pe-tilt-target.pe-tilting { border-color: var(--neon-blue, #00d4ff); }
-    .stat-number.pe-count-complete { display: inline-block; animation: pe-number-finish .62s cubic-bezier(.2,.8,.2,1) both; }
+  var particles = [];
+  var ripples = [];
+  var isRunning = false;
+  var lastSpawn = 0;
 
-    @keyframes pe-intro-spin { to { transform: rotate(360deg); } }
-    @keyframes pe-intro-progress { to { transform: scaleX(1); } }
-    @keyframes pe-intro-breathe { from { opacity: .55; transform: scale(.94); } to { opacity: 1; transform: scale(1.06); } }
-    @keyframes pe-intro-arrive { from { opacity: 0; transform: scale(.72) rotate(-8deg); } to { opacity: 1; transform: scale(1) rotate(0); } }
-    @keyframes pe-intro-exit { to { opacity: 0; transform: scale(1.12) rotate(4deg); filter: blur(5px); } }
-    @keyframes pe-number-finish { 0% { transform: scale(1); } 45% { transform: scale(1.17); text-shadow: 0 0 18px var(--neon-green, #00ff41); } 100% { transform: scale(1); } }
+  var palette = [
+    { r: 0, g: 255, b: 65 },   // Neon Green
+    { r: 0, g: 212, b: 255 },  // Electric Cyan
+    { r: 189, g: 0, b: 255 },  // Neon Magenta/Purple
+    { r: 0, g: 230, b: 180 },  // Mint/Teal
+    { r: 255, g: 190, b: 40 }  // Amber Gold
+  ];
+  var pIndex = 0;
 
-    @media (max-width: 768px) {
-      .pe-intro-circle { width: min(65vw, 250px); }
-      .pe-tilt-target.pe-tilting { border-color: var(--neon-green, #00ff41); }
-    }
-    @media (prefers-reduced-motion: reduce) {
-      .pe-intro::before, .pe-intro-circle, .pe-intro-circle::before, .pe-intro-circle::after,
-      .pe-intro-progress::after, .pe-intro.pe-intro-out .pe-intro-circle,
-      .stat-number.pe-count-complete { animation: none !important; }
-      .pe-reveal { opacity: 1 !important; transform: none !important; filter: none !important; transition: none !important; }
-      .pe-tilt-target, .pe-tilt-target.pe-tilting { transform: none !important; transition: none !important; }
-    }
-  `;
-  document.head.appendChild(premiumStyles);
-
-  // The intro is intentionally generated here so existing index.html stays unchanged.
-  const intro = document.createElement('div');
-  intro.className = 'pe-intro';
-  intro.setAttribute('role', 'status');
-  intro.setAttribute('aria-label', 'Portfolio Peter');
-  intro.setAttribute('aria-live', 'polite');
-  intro.innerHTML = `
-    <div class="pe-intro-circle" aria-hidden="true">
-      <span class="pe-intro-kicker">PORTFOLIO</span>
-      <strong class="pe-intro-name">PETER</strong>
-      <span class="pe-intro-domain">ELIA.DEV</span>
-      <span class="pe-intro-progress"></span>
-    </div>`;
-  document.body.appendChild(intro);
-  document.body.classList.add('pe-intro-lock');
-  document.body.style.overflow = 'hidden';
-  const introDelay = reducedMotion ? 420 : 1480;
-  window.setTimeout(() => {
-    intro.classList.add('pe-intro-out');
-    window.setTimeout(() => {
-      intro.remove();
-      document.body.classList.remove('pe-intro-lock');
-      document.body.style.overflow = '';
-    }, 620);
-  }, introDelay);
-
-  // Reveal selected blocks as they enter the viewport, with a subtle stagger.
-  const revealTargets = document.querySelectorAll(
-    '.section-header, .stat-card, .skill-category, .project-card, .linkedin-card, .contact-terminal, .info-block'
-  );
-  if (reducedMotion || !('IntersectionObserver' in window)) {
-    revealTargets.forEach(el => el.classList.add('pe-revealed'));
-  } else {
-    const revealObserver = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add('pe-revealed');
-        revealObserver.unobserve(entry.target);
+  function spawnParticle(x, y, count, speedMult, customRadius) {
+    count = count || 2;
+    speedMult = speedMult || 1;
+    var isLight = document.documentElement.getAttribute('data-theme') === 'light';
+    for (var i = 0; i < count; i++) {
+      if (particles.length > 80) particles.shift();
+      var col = palette[pIndex % palette.length];
+      pIndex++;
+      var angle = Math.random() * Math.PI * 2;
+      var speed = (Math.random() * 1.6 + 0.5) * speedMult;
+      particles.push({
+        x: x + (Math.random() - 0.5) * 10,
+        y: y + (Math.random() - 0.5) * 10,
+        vx: Math.cos(angle) * speed,
+        vy: Math.sin(angle) * speed,
+        radius: customRadius ? customRadius * (Math.random() * 0.4 + 0.8) : (Math.random() * 14 + 10),
+        alpha: isLight ? 0.65 : 0.9,
+        decay: Math.random() * 0.025 + 0.02,
+        r: isLight ? Math.min(220, col.r * 0.7 + 25) : col.r,
+        g: isLight ? Math.min(220, col.g * 0.7 + 25) : col.g,
+        b: isLight ? Math.min(220, col.b * 0.7 + 25) : col.b
       });
-    }, { threshold: 0.12, rootMargin: '0px 0px -3% 0px' });
-
-    revealTargets.forEach((el, index) => {
-      el.classList.add('pe-reveal');
-      el.style.setProperty('--pe-reveal-delay', `${(index % 5) * 65}ms`);
-      revealObserver.observe(el);
-    });
+    }
+    startLoop();
   }
 
-  // 3D tilt supports both mouse movement and touch dragging without hijacking scroll.
-  if (!reducedMotion) {
-    const tiltTargets = document.querySelectorAll(
-      '#hero-visual, .stat-card, .skill-category, .project-card, .linkedin-card, .terminal-window, .contact-terminal, .info-block'
-    );
-    tiltTargets.forEach(el => {
-      el.classList.add('pe-tilt-target');
-      let touchIsDown = false;
-      let resetTimer = null;
-
-      const resetTilt = () => {
-        touchIsDown = false;
-        el.classList.remove('pe-tilting');
-        el.style.removeProperty('transform');
-        el.style.removeProperty('box-shadow');
-      };
-
-      el.addEventListener('pointerdown', event => {
-        if (event.pointerType === 'touch') touchIsDown = true;
-        if (resetTimer) window.clearTimeout(resetTimer);
-      }, { passive: true });
-
-      el.addEventListener('pointermove', event => {
-        if (event.pointerType === 'touch' && !touchIsDown) return;
-        if (event.pointerType === 'mouse' && !window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
-
-        const rect = el.getBoundingClientRect();
-        if (!rect.width || !rect.height) return;
-        const x = Math.max(0, Math.min(1, (event.clientX - rect.left) / rect.width));
-        const y = Math.max(0, Math.min(1, (event.clientY - rect.top) / rect.height));
-        const strength = event.pointerType === 'touch' ? 5 : 8;
-        const rotateY = (x - .5) * strength * 2;
-        const rotateX = (.5 - y) * strength * 1.5;
-        const scale = event.pointerType === 'touch' ? 1.006 : 1.012;
-
-        el.classList.add('pe-tilting');
-        el.style.transform = `perspective(1100px) rotateX(${rotateX.toFixed(2)}deg) rotateY(${rotateY.toFixed(2)}deg) translateZ(0) scale(${scale})`;
-        if (event.pointerType === 'mouse') {
-          el.style.boxShadow = '0 18px 46px rgba(0, 212, 255, .12), 0 0 24px rgba(0, 255, 65, .06)';
-        }
-      }, { passive: true });
-
-      el.addEventListener('pointerup', () => {
-        if (!touchIsDown) return;
-        resetTimer = window.setTimeout(resetTilt, 260);
-      }, { passive: true });
-      el.addEventListener('pointercancel', resetTilt, { passive: true });
-      el.addEventListener('pointerleave', resetTilt, { passive: true });
-      el.addEventListener('blur', resetTilt, { passive: true });
+  function spawnRipple(x, y) {
+    var isLight = document.documentElement.getAttribute('data-theme') === 'light';
+    var col = palette[pIndex % palette.length];
+    pIndex++;
+    ripples.push({
+      x: x,
+      y: y,
+      radius: 6,
+      maxRadius: Math.min(window.innerWidth * 0.22, 70),
+      alpha: isLight ? 0.75 : 0.95,
+      r: col.r,
+      g: col.g,
+      b: col.b
     });
+    startLoop();
   }
 
-  // Give each existing count-up number a small finish pulse once it reaches its target.
-  const completedCounters = new WeakSet();
-  const counterWatcher = new MutationObserver(mutations => {
-    mutations.forEach(mutation => {
-      const el = mutation.target;
-      if (!el.matches?.('.stat-number') || completedCounters.has(el)) return;
-      const target = Number.parseInt(el.dataset.target || '0', 10) || 0;
-      const current = Number.parseInt(el.textContent || '0', 10) || 0;
-      if (current >= target) {
-        completedCounters.add(el);
-        el.classList.add('pe-count-complete');
+  function startLoop() {
+    if (!isRunning) {
+      isRunning = true;
+      requestAnimationFrame(loop);
+    }
+  }
+
+  function loop() {
+    ctx.clearRect(0, 0, width, height);
+
+    for (var i = ripples.length - 1; i >= 0; i--) {
+      var rip = ripples[i];
+      rip.radius += 2.6;
+      rip.alpha -= 0.032;
+      if (rip.alpha <= 0 || rip.radius >= rip.maxRadius) {
+        ripples.splice(i, 1);
+        continue;
       }
-    });
-  });
-  document.querySelectorAll('.stat-number').forEach(el => counterWatcher.observe(el, { childList: true, characterData: true, subtree: true }));
+      ctx.save();
+      ctx.beginPath();
+      ctx.arc(rip.x, rip.y, rip.radius, 0, Math.PI * 2);
+      ctx.lineWidth = Math.max(1, 2.5 * rip.alpha);
+      ctx.strokeStyle = 'rgba(' + rip.r + ',' + rip.g + ',' + rip.b + ',' + (rip.alpha * 0.85) + ')';
+      ctx.stroke();
+
+      var radGlow = ctx.createRadialGradient(rip.x, rip.y, 0, rip.x, rip.y, rip.radius);
+      radGlow.addColorStop(0, 'rgba(' + rip.r + ',' + rip.g + ',' + rip.b + ',' + (rip.alpha * 0.3) + ')');
+      radGlow.addColorStop(1, 'rgba(0,0,0,0)');
+      ctx.fillStyle = radGlow;
+      ctx.fill();
+      ctx.restore();
+    }
+
+    for (var j = particles.length - 1; j >= 0; j--) {
+      var p = particles[j];
+      p.x += p.vx;
+      p.y += p.vy;
+      p.alpha -= p.decay;
+      p.radius *= 0.96;
+
+      if (p.alpha <= 0 || p.radius <= 1) {
+        particles.splice(j, 1);
+        continue;
+      }
+
+      ctx.save();
+      var grad = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, p.radius);
+      grad.addColorStop(0, 'rgba(' + p.r + ',' + p.g + ',' + p.b + ',' + p.alpha + ')');
+      grad.addColorStop(0.45, 'rgba(' + p.r + ',' + p.g + ',' + p.b + ',' + (p.alpha * 0.55) + ')');
+      grad.addColorStop(1, 'rgba(0,0,0,0)');
+      ctx.fillStyle = grad;
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.restore();
+    }
+
+    if (particles.length > 0 || ripples.length > 0) {
+      requestAnimationFrame(loop);
+    } else {
+      isRunning = false;
+    }
+  }
+
+  // --- Mobile Touch Events ---
+  window.addEventListener('touchstart', function(e) {
+    for (var i = 0; i < e.touches.length; i++) {
+      var t = e.touches[i];
+      spawnRipple(t.clientX, t.clientY);
+      spawnParticle(t.clientX, t.clientY, 3, 1.2, 18);
+    }
+  }, { passive: true });
+
+  window.addEventListener('touchmove', function(e) {
+    var now = performance.now();
+    if (now - lastSpawn < 12) return;
+    lastSpawn = now;
+    for (var i = 0; i < e.touches.length; i++) {
+      var t = e.touches[i];
+      spawnParticle(t.clientX, t.clientY, 2, 0.8, 16);
+    }
+  }, { passive: true });
+
+  // --- Laptop / Desktop Pointer Events ---
+  window.addEventListener('mousemove', function(e) {
+    var now = performance.now();
+    if (now - lastSpawn < 16) return;
+    lastSpawn = now;
+    spawnParticle(e.clientX, e.clientY, 2, 0.9, 14);
+  }, { passive: true });
+
+  window.addEventListener('mousedown', function(e) {
+    spawnRipple(e.clientX, e.clientY);
+    spawnParticle(e.clientX, e.clientY, 4, 1.6, 20);
+  }, { passive: true });
 })();
